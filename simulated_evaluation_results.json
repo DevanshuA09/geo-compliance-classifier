@@ -1,0 +1,352 @@
+{
+  "total_queries": 15,
+  "latencies": [
+    583.6560790747303,
+    735.3077406229072,
+    215.92158181031817,
+    683.4915510996848,
+    255.64750602808874,
+    783.8694583876223,
+    336.7389653909281,
+    297.5924582936509,
+    477.35612711066943,
+    440.69887221339735,
+    475.3111115524393,
+    331.59245549437003,
+    453.2959800798104,
+    608.1700461539111,
+    201.94718966103758
+  ],
+  "hit_at_1": 14,
+  "hit_at_3": 15,
+  "hit_at_5": 15,
+  "query_results": [
+    {
+      "query_id": "age_verification_1",
+      "query": "age verification requirements for social media platforms",
+      "expected_laws": [
+        "CA_SB976",
+        "FL_HB3"
+      ],
+      "retrieved_laws": [
+        "CA_SB976",
+        "FL_HB3",
+        "US_2258A"
+      ],
+      "latency_ms": 583.6560790747303,
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hit_at_5": true,
+      "top_result": {
+        "law_id": "CA_SB976",
+        "score": 0.8577649249574043,
+        "section": "\u00a7792.95"
+      }
+    },
+    {
+      "query_id": "parental_consent_1",
+      "query": "parental consent for minors under 14",
+      "expected_laws": [
+        "FL_HB3",
+        "CA_SB976"
+      ],
+      "retrieved_laws": [
+        "CA_SB976",
+        "FL_HB3",
+        "US_2258A"
+      ],
+      "latency_ms": 735.3077406229072,
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hit_at_5": true,
+      "top_result": {
+        "law_id": "CA_SB976",
+        "score": 0.6765232911812611,
+        "section": "\u00a7617.78"
+      }
+    },
+    {
+      "query_id": "ncmec_reporting_1",
+      "query": "reporting child sexual abuse material to NCMEC",
+      "expected_laws": [
+        "US_2258A"
+      ],
+      "retrieved_laws": [
+        "US_2258A",
+        "CA_SB976",
+        "FL_HB3"
+      ],
+      "latency_ms": 215.92158181031817,
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hit_at_5": true,
+      "top_result": {
+        "law_id": "US_2258A",
+        "score": 0.8833006598372393,
+        "section": "\u00a7106.98"
+      }
+    },
+    {
+      "query_id": "dsa_minors_1",
+      "query": "EU Digital Services Act obligations for protecting minors",
+      "expected_laws": [
+        "EUDSA"
+      ],
+      "retrieved_laws": [
+        "EUDSA",
+        "FL_HB3",
+        "CA_SB976"
+      ],
+      "latency_ms": 683.4915510996848,
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hit_at_5": true,
+      "top_result": {
+        "law_id": "EUDSA",
+        "score": 0.9350245752723734,
+        "section": "\u00a7444.14"
+      }
+    },
+    {
+      "query_id": "california_addiction_1",
+      "query": "California social media addiction prevention measures",
+      "expected_laws": [
+        "CA_SB976"
+      ],
+      "retrieved_laws": [
+        "CA_SB976",
+        "US_2258A",
+        "EUDSA"
+      ],
+      "latency_ms": 255.64750602808874,
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hit_at_5": true,
+      "top_result": {
+        "law_id": "CA_SB976",
+        "score": 0.8554061253428362,
+        "section": "\u00a7649.16"
+      }
+    },
+    {
+      "query_id": "florida_curfew_1",
+      "query": "Florida restrictions on social media access hours",
+      "expected_laws": [
+        "FL_HB3"
+      ],
+      "retrieved_laws": [
+        "FL_HB3",
+        "US_2258A",
+        "EUDSA"
+      ],
+      "latency_ms": 783.8694583876223,
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hit_at_5": true,
+      "top_result": {
+        "law_id": "FL_HB3",
+        "score": 0.8466001426752232,
+        "section": "\u00a7146.85"
+      }
+    },
+    {
+      "query_id": "dsa_risk_assessment_1",
+      "query": "systemic risk assessment requirements for large platforms",
+      "expected_laws": [
+        "EUDSA"
+      ],
+      "retrieved_laws": [
+        "EUDSA",
+        "CA_SB976",
+        "US_2258A"
+      ],
+      "latency_ms": 336.7389653909281,
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hit_at_5": true,
+      "top_result": {
+        "law_id": "EUDSA",
+        "score": 0.6972907610885322,
+        "section": "\u00a7750.47"
+      }
+    },
+    {
+      "query_id": "reporting_timeline_1",
+      "query": "timeline requirements for reporting illegal content",
+      "expected_laws": [
+        "US_2258A",
+        "EUDSA"
+      ],
+      "retrieved_laws": [
+        "EUDSA",
+        "US_2258A",
+        "CA_SB976"
+      ],
+      "latency_ms": 297.5924582936509,
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hit_at_5": true,
+      "top_result": {
+        "law_id": "EUDSA",
+        "score": 0.7869489569603978,
+        "section": "\u00a7350.21"
+      }
+    },
+    {
+      "query_id": "age_assurance_1",
+      "query": "age assurance and verification methods",
+      "expected_laws": [
+        "FL_HB3",
+        "CA_SB976"
+      ],
+      "retrieved_laws": [
+        "FL_HB3",
+        "US_2258A",
+        "EUDSA"
+      ],
+      "latency_ms": 477.35612711066943,
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hit_at_5": true,
+      "top_result": {
+        "law_id": "FL_HB3",
+        "score": 0.6801668251874365,
+        "section": "\u00a7132.41"
+      }
+    },
+    {
+      "query_id": "penalties_violations_1",
+      "query": "penalties for violations and non-compliance",
+      "expected_laws": [
+        "CA_SB976",
+        "FL_HB3",
+        "EUDSA"
+      ],
+      "retrieved_laws": [
+        "CA_SB976",
+        "US_2258A",
+        "EUDSA"
+      ],
+      "latency_ms": 440.69887221339735,
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hit_at_5": true,
+      "top_result": {
+        "law_id": "CA_SB976",
+        "score": 0.829403532853208,
+        "section": "\u00a7505.83"
+      }
+    },
+    {
+      "query_id": "data_protection_minors_1",
+      "query": "data protection requirements for minors",
+      "expected_laws": [
+        "EUDSA",
+        "CA_SB976"
+      ],
+      "retrieved_laws": [
+        "EUDSA",
+        "US_2258A",
+        "FL_HB3"
+      ],
+      "latency_ms": 475.3111115524393,
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hit_at_5": true,
+      "top_result": {
+        "law_id": "EUDSA",
+        "score": 0.9142380092608668,
+        "section": "\u00a7508.47"
+      }
+    },
+    {
+      "query_id": "algorithmic_transparency_1",
+      "query": "algorithmic transparency and recommendation systems",
+      "expected_laws": [
+        "EUDSA",
+        "CA_SB976"
+      ],
+      "retrieved_laws": [
+        "US_2258A",
+        "CA_SB976",
+        "EUDSA"
+      ],
+      "latency_ms": 331.59245549437003,
+      "hit_at_1": false,
+      "hit_at_3": true,
+      "hit_at_5": true,
+      "top_result": {
+        "law_id": "US_2258A",
+        "score": 0.6534944617718913,
+        "section": "\u00a7263.88"
+      }
+    },
+    {
+      "query_id": "notification_requirements_1",
+      "query": "notification requirements to users and authorities",
+      "expected_laws": [
+        "EUDSA",
+        "US_2258A"
+      ],
+      "retrieved_laws": [
+        "US_2258A",
+        "EUDSA",
+        "FL_HB3"
+      ],
+      "latency_ms": 453.2959800798104,
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hit_at_5": true,
+      "top_result": {
+        "law_id": "US_2258A",
+        "score": 0.9398774321647663,
+        "section": "\u00a7981.2"
+      }
+    },
+    {
+      "query_id": "platform_liability_1",
+      "query": "platform liability for harmful content",
+      "expected_laws": [
+        "EUDSA",
+        "FL_HB3"
+      ],
+      "retrieved_laws": [
+        "FL_HB3",
+        "US_2258A",
+        "EUDSA"
+      ],
+      "latency_ms": 608.1700461539111,
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hit_at_5": true,
+      "top_result": {
+        "law_id": "FL_HB3",
+        "score": 0.7027250450265992,
+        "section": "\u00a7261.59"
+      }
+    },
+    {
+      "query_id": "implementation_timeline_1",
+      "query": "implementation timeline and effective dates",
+      "expected_laws": [
+        "CA_SB976",
+        "FL_HB3",
+        "EUDSA"
+      ],
+      "retrieved_laws": [
+        "CA_SB976",
+        "EUDSA",
+        "FL_HB3"
+      ],
+      "latency_ms": 201.94718966103758,
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hit_at_5": true,
+      "top_result": {
+        "law_id": "CA_SB976",
+        "score": 0.9046814994428684,
+        "section": "\u00a7405.82"
+      }
+    }
+  ]
+}

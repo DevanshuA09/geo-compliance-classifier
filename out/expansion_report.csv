@@ -1,0 +1,85 @@
+feature_id,term,expansion,count
+csv_feature_0000,ASL,Age-sensitive logic,2
+csv_feature_0000,EchoTrace,Log tracing mode to verify compliance routing,1
+csv_feature_0000,GH,Geo-handler; a module responsible for routing features based on user region,2
+csv_feature_0000,ShadowMode,Deploy feature in non-user-impact way to collect analytics only,1
+csv_feature_0001,FR,Feature rollout status,1
+csv_feature_0001,GH,Geo-handler; a module responsible for routing features based on user region,1
+csv_feature_0001,NR,Not recommended,2
+csv_feature_0001,PF,Personalized feed,2
+csv_feature_0002,CDS,Compliance Detection System,2
+csv_feature_0002,LCP,Local compliance policy,1
+csv_feature_0002,T5,Tier 5 sensitivity data; more critical than T1‚ÄìT4 in this internal taxonomy,2
+csv_feature_0003,EchoTrace,Log tracing mode to verify compliance routing,1
+csv_feature_0003,GH,Geo-handler; a module responsible for routing features based on user region,1
+csv_feature_0003,NSP,Non-shareable policy (content should not be shared externally),2
+csv_feature_0003,Redline,Flag for legal review (different from its traditional business use for 'financial loss'),1
+csv_feature_0003,Softblock,A user-level limitation applied silently without notifications,1
+csv_feature_0004,BB,Baseline Behavior; standard user behavior used for anomaly detection,1
+csv_feature_0004,CDS,Compliance Detection System,1
+csv_feature_0004,Glow,"A compliance-flagging status, internally used to indicate geo-based alerts",1
+csv_feature_0004,IMT,Internal monitoring trigger,1
+csv_feature_0004,Jellybean,Feature name for internal parental control system,2
+csv_feature_0004,ShadowMode,Deploy feature in non-user-impact way to collect analytics only,1
+csv_feature_0005,CDS,Compliance Detection System,2
+csv_feature_0005,DRT,Data retention threshold; duration for which logs can be stored,2
+csv_feature_0005,EchoTrace,Log tracing mode to verify compliance routing,1
+csv_feature_0005,Spanner,A synthetic name for a rule engine (not to be confused with Google Spanner),1
+csv_feature_0006,NSP,Non-shareable policy (content should not be shared externally),2
+csv_feature_0006,Redline,Flag for legal review (different from its traditional business use for 'financial loss'),1
+csv_feature_0006,Softblock,A user-level limitation applied silently without notifications,1
+csv_feature_0007,CDS,Compliance Detection System,1
+csv_feature_0007,GH,Geo-handler; a module responsible for routing features based on user region,1
+csv_feature_0007,T5,Tier 5 sensitivity data; more critical than T1‚ÄìT4 in this internal taxonomy,2
+csv_feature_0008,ASL,Age-sensitive logic,1
+csv_feature_0008,BB,Baseline Behavior; standard user behavior used for anomaly detection,1
+csv_feature_0008,CDS,Compliance Detection System,1
+csv_feature_0008,Snowcap,A synthetic codename for the child safety policy framework,2
+csv_feature_0009,PF,Personalized feed,2
+csv_feature_0010,BB,Baseline Behavior; standard user behavior used for anomaly detection,1
+csv_feature_0010,EchoTrace,Log tracing mode to verify compliance routing,1
+csv_feature_0011,FR,Feature rollout status,1
+csv_feature_0011,IMT,Internal monitoring trigger,1
+csv_feature_0012,BB,Baseline Behavior; standard user behavior used for anomaly detection,1
+csv_feature_0012,PF,Personalized feed,2
+csv_feature_0012,ShadowMode,Deploy feature in non-user-impact way to collect analytics only,1
+csv_feature_0013,NR,Not recommended,2
+csv_feature_0013,Spanner,A synthetic name for a rule engine (not to be confused with Google Spanner),1
+csv_feature_0014,CDS,Compliance Detection System,2
+csv_feature_0014,DRT,Data retention threshold; duration for which logs can be stored,1
+csv_feature_0015,BB,Baseline Behavior; standard user behavior used for anomaly detection,1
+csv_feature_0015,GH,Geo-handler; a module responsible for routing features based on user region,1
+csv_feature_0016,Glow,"A compliance-flagging status, internally used to indicate geo-based alerts",1
+csv_feature_0016,PF,Personalized feed,2
+csv_feature_0016,Spanner,A synthetic name for a rule engine (not to be confused with Google Spanner),1
+csv_feature_0017,GH,Geo-handler; a module responsible for routing features based on user region,1
+csv_feature_0017,ShadowMode,Deploy feature in non-user-impact way to collect analytics only,1
+csv_feature_0018,GH,Geo-handler; a module responsible for routing features based on user region,1
+csv_feature_0018,Spanner,A synthetic name for a rule engine (not to be confused with Google Spanner),1
+csv_feature_0019,FR,Feature rollout status,1
+csv_feature_0019,GH,Geo-handler; a module responsible for routing features based on user region,1
+csv_feature_0020,ASL,Age-sensitive logic,2
+csv_feature_0020,CDS,Compliance Detection System,1
+csv_feature_0020,EchoTrace,Log tracing mode to verify compliance routing,1
+csv_feature_0021,LCP,Local compliance policy,2
+csv_feature_0021,ShadowMode,Deploy feature in non-user-impact way to collect analytics only,1
+csv_feature_0022,BB,Baseline Behavior; standard user behavior used for anomaly detection,1
+csv_feature_0022,IMT,Internal monitoring trigger,1
+csv_feature_0023,CDS,Compliance Detection System,1
+csv_feature_0023,EchoTrace,Log tracing mode to verify compliance routing,1
+csv_feature_0023,Redline,Flag for legal review (different from its traditional business use for 'financial loss'),1
+csv_feature_0024,BB,Baseline Behavior; standard user behavior used for anomaly detection,1
+csv_feature_0024,Spanner,A synthetic name for a rule engine (not to be confused with Google Spanner),1
+csv_feature_0025,ASL,Age-sensitive logic,1
+csv_feature_0025,BB,Baseline Behavior; standard user behavior used for anomaly detection,1
+csv_feature_0025,Jellybean,Feature name for internal parental control system,2
+csv_feature_0026,ASL,Age-sensitive logic,1
+csv_feature_0026,CDS,Compliance Detection System,1
+csv_feature_0026,EchoTrace,Log tracing mode to verify compliance routing,1
+csv_feature_0026,PF,Personalized feed,1
+csv_feature_0027,ASL,Age-sensitive logic,1
+csv_feature_0027,Softblock,A user-level limitation applied silently without notifications,1
+csv_feature_0028,Snowcap,A synthetic codename for the child safety policy framework,1
+csv_feature_0029,ASL,Age-sensitive logic,1
+csv_feature_0029,GH,Geo-handler; a module responsible for routing features based on user region,1
+csv_feature_0029,T5,Tier 5 sensitivity data; more critical than T1‚ÄìT4 in this internal taxonomy,1

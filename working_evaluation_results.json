@@ -1,0 +1,107 @@
+{
+  "total_queries": 6,
+  "hit_at_1": 1,
+  "hit_at_3": 1,
+  "latencies": [
+    44.55685615539551,
+    44.67296600341797,
+    48.438072204589844,
+    40.32301902770996,
+    44.86203193664551,
+    43.43581199645996
+  ],
+  "query_results": [
+    {
+      "query": "parental consent requirements for minors",
+      "expected_laws": [
+        "CA_SB976",
+        "FL_HB3"
+      ],
+      "retrieved_laws": [
+        "EUDSA",
+        "EUDSA",
+        "EUDSA"
+      ],
+      "hit_at_1": false,
+      "hit_at_3": false,
+      "latency_ms": 44.55685615539551,
+      "top_score": 1.0
+    },
+    {
+      "query": "age verification social media platforms",
+      "expected_laws": [
+        "CA_SB976",
+        "FL_HB3"
+      ],
+      "retrieved_laws": [
+        "EUDSA",
+        "EUDSA",
+        "EUDSA"
+      ],
+      "hit_at_1": false,
+      "hit_at_3": false,
+      "latency_ms": 44.67296600341797,
+      "top_score": 1.0
+    },
+    {
+      "query": "reporting child sexual abuse NCMEC",
+      "expected_laws": [
+        "US_2258A"
+      ],
+      "retrieved_laws": [
+        "EUDSA",
+        "EUDSA",
+        "EUDSA"
+      ],
+      "hit_at_1": false,
+      "hit_at_3": false,
+      "latency_ms": 48.438072204589844,
+      "top_score": 1.0
+    },
+    {
+      "query": "Digital Services Act minors protection EU",
+      "expected_laws": [
+        "EUDSA"
+      ],
+      "retrieved_laws": [
+        "EUDSA",
+        "EUDSA",
+        "EUDSA"
+      ],
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "latency_ms": 40.32301902770996,
+      "top_score": 1.0
+    },
+    {
+      "query": "California addiction social media prevention",
+      "expected_laws": [
+        "CA_SB976"
+      ],
+      "retrieved_laws": [
+        "EUDSA",
+        "EUDSA",
+        "EUDSA"
+      ],
+      "hit_at_1": false,
+      "hit_at_3": false,
+      "latency_ms": 44.86203193664551,
+      "top_score": 1.0
+    },
+    {
+      "query": "Florida curfew restrictions minors",
+      "expected_laws": [
+        "FL_HB3"
+      ],
+      "retrieved_laws": [
+        "EUDSA",
+        "EUDSA",
+        "EUDSA"
+      ],
+      "hit_at_1": false,
+      "hit_at_3": false,
+      "latency_ms": 43.43581199645996,
+      "top_score": 1.0
+    }
+  ]
+}

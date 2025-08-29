@@ -1,0 +1,709 @@
+ENROLLED  
+CS/CS/HB 3, Engrossed 1  2024 Legislature  
+ 
+ 
+ 
+CODING: Words stricken  are deletions; words underlined  are additions.  
+hb0003 -04-er Page 1 of 20 F L O R I D A  H O U S E  O F  R E P R E S E N T A T I V E S 
+ 
+ 
+ 
+      1 
+An act relating to online protections for minors; 2 
+creating s. 501.1736, F.S.; defining terms; requiring 3 
+social media platforms to prohibit certain minors from 4 
+creating new accounts; requiring social media 5 
+platforms to terminate certain accounts and provide 6 
+additional options for termination of such accounts; 7 
+providing conditions under which social media 8 
+platforms are required to prohibit certain minors from 9 
+entering into contracts to become account holders; 10 
+authorizing the Department of Legal Affairs to bring 11 
+actions under the Florida Deceptive and Unfair Trade 12 
+Practices Act for knowing or reckless violations; 13 
+authorizing the department to issue and enforce civil  14 
+investigative demands under certain circumstances; 15 
+providing civil penalties; authorizing punitive 16 
+damages under certain circumstances; providing for 17 
+private causes of action; requiring that such actions 18 
+be brought within a specified timeframe; providing 19 
+that certain social media platforms are subject to the 20 
+jurisdiction of state courts; providing that if a 21 
+social media platform allows an account holder to use 22 
+such platform, the parties have entered into a 23 
+contract; providing construction; authorizing the 24 
+department to take certain investigative and 25 
+        
+ENROLLED  
+CS/CS/HB 3, Engrossed 1  2024 Legislature  
+ 
+ 
+ 
+CODING: Words stricken  are deletions; words underlined  are additions.  
+hb0003 -04-er Page 2 of 20 F L O R I D A  H O U S E  O F  R E P R E S E N T A T I V E S 
+ 
+ 
+ 
+compliance actions; authorizing the department to 26 
+adopt rules; creating s. 501.1737, F.S.; defining 27 
+terms; requiring a commercial entity that knowingly 28 
+and intentionally publishes or distributes material 29 
+harmful to minors on a website or application that 30 
+contains a substantial portion of such material to use 31 
+certain verification methods and prevent access to 32 
+such material by minors; providing applicability and 33 
+construction; authorizing the department to bring 34 
+actions under the Florida Deceptive and Unfair Trade 35 
+Practices Act for violations; providing civil 36 
+penalties; authorizing punitive damages under certain 37 
+circumstances; providing for private causes of action; 38 
+requiring that such actions be brought within a 39 
+specified timeframe; providing that certain commercial 40 
+entities are subject to the jurisdiction of state 41 
+courts; providing construction; authorizing the 42 
+department to take certain investigative and 43 
+compliance actions; authorizing the department to 44 
+adopt rules ; creating s. 501.1738, F.S.; defining the 45 
+term "anonymous age verification"; providing 46 
+requirements for a third party conducting age 47 
+verification pursuant to certain provisions; providing 48 
+for severability; providing an effective date.  49 
+ 50 
+        
+ENROLLED  
+CS/CS/HB 3, Engrossed 1  2024 Legislature  
+ 
+ 
+ 
+CODING: Words stricken  are deletions; words underlined  are additions.  
+hb0003 -04-er Page 3 of 20 F L O R I D A  H O U S E  O F  R E P R E S E N T A T I V E S 
+ 
+ 
+ 
+Be It Enacted b y the Legislature of the State of Florida:  51 
+ 52 
+ Section 1.  Section 501.1736, Florida Statutes, is created 53 
+to read:  54 
+ 501.1736  Social media use for minors. — 55 
+ (1)  As used in this section, the term:  56 
+ (a)  "Account holder" means a resident who opens an accoun t 57 
+or creates a profile or is identified by the social media 58 
+platform by a unique identifier while using or accessing a 59 
+social media platform when the social media platform knows or 60 
+has reason to believe the resident is located in this state.  61 
+ (b)  "Daily a ctive users" means the number of unique users 62 
+in the United States who used the online forum, website, or 63 
+application at least 80 percent of the days during the previous 64 
+12 months, or, if the online forum, website, or application did 65 
+not exist during the p revious 12 months, the number of unique 66 
+users in the United States who used the online forum, website, 67 
+or application at least 80 percent of the days during the 68 
+previous month.  69 
+ (c)  "Department" means the Department of Legal Affairs.  70 
+ (d)  "Resident" mean s a person who lives in this state for 71 
+more than 6 months of the year.  72 
+ (e)  "Social media platform" means an online forum, 73 
+website, or application that satisfies each of the following 74 
+criteria:  75 
+        
+ENROLLED  
+CS/CS/HB 3, Engrossed 1  2024 Legislature  
+ 
+ 
+ 
+CODING: Words stricken  are deletions; words underlined  are additions.  
+hb0003 -04-er Page 4 of 20 F L O R I D A  H O U S E  O F  R E P R E S E N T A T I V E S 
+ 
+ 
+ 
+ 1.  Allows users to upload content or view the content or 76 
+activity of other users;  77 
+ 2.  Ten percent or more of the daily active users who are 78 
+younger than 16 years of age spend on average 2 hours per day or 79 
+longer on the online forum, website, or application on the days 80 
+when using the online forum, website, or appl ication during the 81 
+previous 12 months or, if the online forum, website, or 82 
+application did not exist during the previous 12 months, during 83 
+the previous month;  84 
+ 3.  Employs algorithms that analyze user data or 85 
+information on users to select content for user s; and 86 
+ 4.  Has any of the following addictive features:  87 
+ a.  Infinite scrolling, which means either:  88 
+ (I)  Continuously loading content, or content that loads as 89 
+the user scrolls down the page without the need to open a 90 
+separate page; or  91 
+ (II)  Seamless content, or the use of pages with no visible 92 
+or apparent end or page breaks.  93 
+ b.  Push notifications or alerts sent by the online forum, 94 
+website, or application to inform a user about specific 95 
+activities or events related to the user's accou nt. 96 
+ c.  Displays personal interactive metrics that indicate the 97 
+number of times other users have clicked a button to indicate 98 
+their reaction to content or have shared or reposted the 99 
+content.  100 
+        
+ENROLLED  
+CS/CS/HB 3, Engrossed 1  2024 Legislature  
+ 
+ 
+ 
+CODING: Words stricken  are deletions; words underlined  are additions.  
+hb0003 -04-er Page 5 of 20 F L O R I D A  H O U S E  O F  R E P R E S E N T A T I V E S 
+ 
+ 
+ 
+ d.  Auto -play video or video that begins to play without 101 
+the user first clicking on the video or on a play button for 102 
+that video.  103 
+ e.  Live -streaming or a function that allows a user or 104 
+advertiser to broadcast live video content in real -time. 105 
+ 106 
+The term does not include an online service, website, or 107 
+application where  the exclusive function is e -mail or direct 108 
+messaging consisting of text, photographs, pictures, images, or 109 
+videos shared only between the sender and the recipients, 110 
+without displaying or posting publicly or to other users not 111 
+specifically identified as th e recipients by the sender.  112 
+ (2)(a)  A social media platform shall prohibit a minor who 113 
+is younger than 14 years of age from entering into a contract 114 
+with a social media platform to become an account holder.  115 
+ (b)  A social media platform shall:  116 
+ 1.  Termin ate any account held by an account holder younger 117 
+than 14 years of age, including accounts that the social media 118 
+platform treats or categorizes as belonging to an account holder 119 
+who is likely younger than 14 years of age for purposes of 120 
+targeting content o r advertising, and provide 90 days for an 121 
+account holder to dispute such termination. Termination must be 122 
+effective upon the expiration of the 90 days if the account 123 
+holder fails to effectively dispute the termination.  124 
+ 2.  Allow an account holder younger than 14 years of age to 125 
+        
+ENROLLED  
+CS/CS/HB 3, Engrossed 1  2024 Legislature  
+ 
+ 
+ 
+CODING: Words stricken  are deletions; words underlined  are additions.  
+hb0003 -04-er Page 6 of 20 F L O R I D A  H O U S E  O F  R E P R E S E N T A T I V E S 
+ 
+ 
+ 
+request to terminate the account. Termination must be effective 126 
+within 5 business days after such request.  127 
+ 3.  Allow the confirmed parent or guardian of an account 128 
+holder younger than 14 years of age to request that the minor's 129 
+account be terminated. Termination must be effective within 10 130 
+business days after such request.  131 
+ 4.  Permanently delete all personal information held by the 132 
+social media platform relating to the terminated account, unless 133 
+there are legal requirements to main tain such information.  134 
+ (3)(a)  A social media platform shall prohibit a minor who 135 
+is 14 or 15 years of age from entering into a contract with a 136 
+social media platform to become an account holder, unless the 137 
+minor's parent or guardian provides consent for t he minor to 138 
+become an account holder.  139 
+ (b)  A social media platform shall:  140 
+ 1.  Terminate any account held by an account holder who is 141 
+14 or 15 years of age, including accounts that the social media 142 
+platform treats or categorizes as belonging to an account  holder 143 
+who is likely 14 or 15 years of age for purposes of targeting 144 
+content or advertising, if the account holder's parent or 145 
+guardian has not provided consent for the minor to create or 146 
+maintain the account. The social media platform shall provide 90 147 
+days for an account holder to dispute such termination. 148 
+Termination must be effective upon the expiration of the 90 days 149 
+if the account holder fails to effectively dispute the 150 
+        
+ENROLLED  
+CS/CS/HB 3, Engrossed 1  2024 Legislature  
+ 
+ 
+ 
+CODING: Words stricken  are deletions; words underlined  are additions.  
+hb0003 -04-er Page 7 of 20 F L O R I D A  H O U S E  O F  R E P R E S E N T A T I V E S 
+ 
+ 
+ 
+termination.  151 
+ 2.  Allow an account holder who is 14 or 15 years of age to 152 
+request to terminate the account. Termination must be effective 153 
+within 5 business days after such request.  154 
+ 3.  Allow the confirmed parent or guardian of an account 155 
+holder who is 14 or 15 years of age to request that the minor's 156 
+account be terminated. Termination must be effective within 10 157 
+business days after such request.  158 
+ 4.  Permanently delete all personal information held by the 159 
+social media platform relating to the terminated account, unless 160 
+there are legal requirements to maintain such information.  161 
+ (4)  If a court enjoins the enforcement of subsection (3) 162 
+or would otherwise enjoin enforcement of any other provision of 163 
+this section due to subsection (3), then subsection (3) shall be 164 
+severed, and the following shall come into effect:  165 
+ (a)  A social media platf orm shall prohibit a minor who is 166 
+14 or 15 years of age from entering into a contract with a 167 
+social media platform to become an account holder.  168 
+ (b)  A social media platform shall:  169 
+ 1.  Terminate any account held by an account holder who is 170 
+14 or 15 years of age, including accounts that the social media 171 
+platform treats or categorizes as belonging to an account holder 172 
+who is likely 14 or 15 years of age for purposes of targeting 173 
+content or advertising, and provide 90 days for an account 174 
+holder to dispute suc h termination. Termination must be 175 
+        
+ENROLLED  
+CS/CS/HB 3, Engrossed 1  2024 Legislature  
+ 
+ 
+ 
+CODING: Words stricken  are deletions; words underlined  are additions.  
+hb0003 -04-er Page 8 of 20 F L O R I D A  H O U S E  O F  R E P R E S E N T A T I V E S 
+ 
+ 
+ 
+effective upon the expiration of 90 days if the account holder 176 
+fails to effectively dispute the termination.  177 
+ 2.  Allow an account holder who is 14 or 15 years of age to 178 
+request to terminate the account. Termination must be effective 179 
+within 5 business days after such request.  180 
+ 3.  Allow the confirmed parent or guardian of an account 181 
+holder who is 14 or 15 years of age to request that the minor's 182 
+account be terminated. Termination must be effective within 10 183 
+business days after such request.  184 
+ 4.  Permanently delete all personal information held by the 185 
+social media platform relating to the terminated account, unless 186 
+there are legal requirements to maintain such information.  187 
+ (5)  Any knowing or reckless violation of subsecti on (2), 188 
+subsection (3), or, if in effect, subsection (4) is deemed an 189 
+unfair and deceptive trade practice actionable under part II of 190 
+this chapter solely by the department against a social media 191 
+platform. If the department has reason to believe that a soci al 192 
+media platform is in violation of subsection (2), subsection 193 
+(3), or, if in effect, subsection (4), the department, as the 194 
+enforcing authority, may bring an action against such platform 195 
+for an unfair or deceptive act or practice. For the purpose of 196 
+bringing an action pursuant to this section, ss. 501.211 and 197 
+501.212 do not apply. In addition to other remedies under part 198 
+II of this chapter, the department may collect a civil penalty 199 
+of up to $50,000 per violation and reasonable attorney fees and 200 
+        
+ENROLLED  
+CS/CS/HB 3, Engrossed 1  2024 Legislature  
+ 
+ 
+ 
+CODING: Words stricken  are deletions; words underlined  are additions.  
+hb0003 -04-er Page 9 of 20 F L O R I D A  H O U S E  O F  R E P R E S E N T A T I V E S 
+ 
+ 
+ 
+court cos ts. When the social media platform's failure to comply 201 
+with subsection (2), subsection (3), or, if in effect, 202 
+subsection (4) is a consistent pattern of knowing or reckless 203 
+conduct, punitive damages may be assessed against the social 204 
+media platform.  205 
+ (6)(a)  A social media platform that knowingly or 206 
+recklessly violates subsection (2), subsection (3), or, if in 207 
+effect, subsection (4) is liable to the minor account holder, 208 
+including court costs and reasonable attorney fees as ordered by 209 
+the court. Claima nts may be awarded up to $10,000 in damages.  210 
+ (b)  A civil action for a claim under this subsection must 211 
+be brought within 1 year from the date the complainant knew, or 212 
+reasonably should have known, of the alleged violation.  213 
+ (c)  Any action brought under this subsection may only be 214 
+brought on behalf of a minor account holder.  215 
+ (7)  For purposes of bringing an action under this section, 216 
+a social media platform that allows a minor account holder 217 
+younger than 14 years of age or a minor account holder who is 1 4 218 
+or 15 years of age to create an account on such platform is 219 
+considered to be both engaged in substantial and not isolated 220 
+activities within this state and operating, conducting, engaging 221 
+in, or carrying on a business and doing business in this state, 222 
+and is therefore subject to the jurisdiction of the courts of 223 
+this state.  224 
+ (8)  If a social media platform allows an account holder to 225 
+        
+ENROLLED  
+CS/CS/HB 3, Engrossed 1  2024 Legislature  
+ 
+ 
+ 
+CODING: Words stricken  are deletions; words underlined  are additions.  
+hb0003 -04-er Page 10 of 20 F L O R I D A  H O U S E  O F  R E P R E S E N T A T I V E S 
+ 
+ 
+ 
+use the social media platform, the parties have entered into a 226 
+contract.  227 
+ (9)  This section does not preclude any other avai lable 228 
+remedy at law or equity.  229 
+ (10)(a)  If, by its own inquiry or as a result of 230 
+complaints, the department has reason to believe that an entity 231 
+or person has engaged in, or is engaging in, an act or practice 232 
+that violates this section, the department may  administer oaths 233 
+and affirmations, subpoena witnesses or matter, and collect 234 
+evidence. Within 5 days, excluding weekends and legal holidays, 235 
+after the service of a subpoena or at any time before the return 236 
+date specified therein, whichever is longer, the party served 237 
+may file in the circuit court in the county in which it resides 238 
+or in which it transacts business and serve upon the enforcing 239 
+authority a petition for an order modifying or setting aside the 240 
+subpoena. The petitioner may raise any objection or  privilege 241 
+which would be available upon service of such subpoena in a 242 
+civil action. The subpoena shall inform the party served of its 243 
+rights under this subsection.  244 
+ (b)  If the matter that the department seeks to obtain by 245 
+subpoena is located outside the state, the entity or person 246 
+subpoenaed may make it available to the department or its 247 
+representative to examine the matter at the place where it is 248 
+located. The department may designate representatives, including 249 
+officials of the state in which the matter is located, to 250 
+        
+ENROLLED  
+CS/CS/HB 3, Engrossed 1  2024 Legislature  
+ 
+ 
+ 
+CODING: Words stricken  are deletions; words underlined  are additions.  
+hb0003 -04-er Page 11 of 20 F L O R I D A  H O U S E  O F  R E P R E S E N T A T I V E S 
+ 
+ 
+ 
+inspect the matter on its behalf, and may respond to similar 251 
+requests from officials of other states.  252 
+ (c)  Upon failure of an entity or person without lawful 253 
+excuse to obey a subpoena and upon reasonable notice to all 254 
+persons affected, the department may apply to the circuit court 255 
+for an order compelling compliance.  256 
+ (d)  The department may request that an entity or person 257 
+that refuses to comply with a subpoena on the ground that 258 
+testimony or matter may incriminate the entity or person be 259 
+ordered by the court to provide the testimony or matter. Except 260 
+in a prosecution for perjury, an entity or individual that 261 
+complies with a court order to provide testimony or matter after 262 
+asserting a valid privilege against self -incrimination shall not 263 
+have the testimony or matter so provided, or evidence derived 264 
+therefrom, received against the entity or person in any criminal 265 
+investigation or proceeding.  266 
+ (e)  Any entity or person upon whom a subpoena is served 267 
+pursuant to this section shall comply with the terms thereof 268 
+unless otherwise provided by order of the court. Any entity or 269 
+person that fails to appear with the intent to avoid, evade, or 270 
+prevent compliance in whole or in part with any investigation 271 
+under this part or who removes from any place, concea ls, 272 
+withholds, mutilates, alters, or destroys, or by any other means 273 
+falsifies any documentary material in the possession, custody, 274 
+or control of any entity or person subject to any such subpoena, 275 
+        
+ENROLLED  
+CS/CS/HB 3, Engrossed 1  2024 Legislature  
+ 
+ 
+ 
+CODING: Words stricken  are deletions; words underlined  are additions.  
+hb0003 -04-er Page 12 of 20 F L O R I D A  H O U S E  O F  R E P R E S E N T A T I V E S 
+ 
+ 
+ 
+or knowingly conceals any relevant information with the int ent 276 
+to avoid, evade, or prevent compliance shall be liable for a 277 
+civil penalty of not more than $5,000 per week in violation, 278 
+reasonable attorney's fees, and costs.  279 
+ (11)  The department may adopt rules to implement this 280 
+section.  281 
+ Section 2.  Section 501 .1737, Florida Statutes, is created 282 
+to read:  283 
+ 501.1737  Age verification for online access to materials 284 
+harmful to minors. — 285 
+ (1)  As used in this section, the term:  286 
+ (a)  "Anonymous age verification" has the same meaning as 287 
+in s. 501.1738.  288 
+ (b)  "Commercia l entity" includes a corporation, a limited 289 
+liability company, a partnership, a limited partnership, a sole 290 
+proprietorship, and any other legally recognized entity.  291 
+ (c)  "Department" means the Department of Legal Affairs.  292 
+ (d)  "Distribute" means to issue , sell, give, provide, 293 
+deliver, transfer, transmit, circulate, or disseminate by any 294 
+means. 295 
+ (e)  "Material harmful to minors" means any material that:  296 
+ 1.  The average person applying contemporary community 297 
+standards would find, taken as a whole, appeals to the prurient 298 
+interest;  299 
+ 2.  Depicts or describes, in a patently offensive way, 300 
+        
+ENROLLED  
+CS/CS/HB 3, Engrossed 1  2024 Legislature  
+ 
+ 
+ 
+CODING: Words stricken  are deletions; words underlined  are additions.  
+hb0003 -04-er Page 13 of 20 F L O R I D A  H O U S E  O F  R E P R E S E N T A T I V E S 
+ 
+ 
+ 
+sexual conduct as specifically defined in s. 847.001(19); and  301 
+ 3.  When taken as a whole, lacks serious literary, 302 
+artistic, political, or scientific value for minors.  303 
+ (f)  "News-gathering organization" means any of the 304 
+following:  305 
+ 1.  A newspaper, news publication, or news source, printed 306 
+or published online or on a mobile platform, engaged in 307 
+reporting current news and matters of public interest, and an 308 
+employee thereof who can provide documentation of such 309 
+employment.  310 
+ 2.  A radio broadcast station, television broadcast 311 
+station, cable television operator, or wire service, and an 312 
+employee thereof who can provide documentation of such 313 
+employment.  314 
+ (g)  "Publish" means to commu nicate or make information 315 
+available to another person or entity on a publicly available 316 
+website or application.  317 
+ (h)  "Resident" means a person who lives in this state for 318 
+more than 6 months of the year.  319 
+ (i)  "Standard age verification" means any commerc ially 320 
+reasonable method of age verification approved by the commercial 321 
+entity. 322 
+ (j)  "Substantial portion" means more than 33.3 percent of 323 
+total material on a website or application.  324 
+ (2)  A commercial entity that knowingly and intentionally 325 
+        
+ENROLLED  
+CS/CS/HB 3, Engrossed 1  2024 Legislature  
+ 
+ 
+ 
+CODING: Words stricken  are deletions; words underlined  are additions.  
+hb0003 -04-er Page 14 of 20 F L O R I D A  H O U S E  O F  R E P R E S E N T A T I V E S 
+ 
+ 
+ 
+publishes or distributes material harmful to minors on a website 326 
+or application, if the website or application contains a 327 
+substantial portion of material harmful to minors, must use 328 
+either anonymous age verification or standard age verification 329 
+to verify t hat the age of a person attempting to access the 330 
+material is 18 years of age or older and prevent access to the 331 
+material by a person younger than 18 years of age. The 332 
+commercial entity must offer anonymous age verification and 333 
+standard age verification, an d a person attempting to access the 334 
+material may select which method will be used to verify his or 335 
+her age.  336 
+ (3)  A commercial entity must ensure that the requirements 337 
+of s. 501.1738 are met.  338 
+ (4)(a)  This section does not apply to any bona fide news 339 
+or public interest broadcast, website video, report, or event 340 
+and does not affect the rights of a news -gathering organization.  341 
+ (b)  An Internet service provider or its affiliates or 342 
+subsidiaries, a search engine, or a cloud service provider does 343 
+not violate th is section solely for providing access or 344 
+connection to or from a website or other information or content 345 
+on the Internet or a facility, system, or network not under the 346 
+provider's control, including transmission, downloading, 347 
+intermediate storage, or acce ss software, to the extent the 348 
+provider is not responsible for the creation of the content of 349 
+the communication which constitutes material harmful to minors.  350 
+        
+ENROLLED  
+CS/CS/HB 3, Engrossed 1  2024 Legislature  
+ 
+ 
+ 
+CODING: Words stricken  are deletions; words underlined  are additions.  
+hb0003 -04-er Page 15 of 20 F L O R I D A  H O U S E  O F  R E P R E S E N T A T I V E S 
+ 
+ 
+ 
+ (5)(a)  Any violation of subsection (2) or subsection (3) 351 
+is deemed an unfair and deceptive trade  practice actionable 352 
+under part II of this chapter solely by the department on behalf 353 
+of a resident minor against a commercial entity. If the 354 
+department has reason to believe that a commercial entity is in 355 
+violation of subsection (2) or subsection (3), the  department, 356 
+as the enforcing authority, may bring an action against the 357 
+commercial entity for an unfair or deceptive act or practice. 358 
+For the purpose of bringing an action pursuant to this section, 359 
+ss. 501.211 and 501.212 do not apply. In addition to any other 360 
+remedy under part II of this chapter, the department may collect 361 
+a civil penalty of up to $50,000 per violation and reasonable 362 
+attorney fees and court costs. When the commercial entity's 363 
+failure to comply with subsection (2) or subsection (3) is a 364 
+consistent pattern of conduct of the commercial entity, punitive 365 
+damages may be assessed against the commercial entity.  366 
+ (b)  A third party that performs age verification for a 367 
+commercial entity in violation of s. 501.1738 is deemed to have 368 
+committed an unfa ir and deceptive trade practice actionable 369 
+under part II of this chapter solely by the department against 370 
+such third party. If the department has reason to believe that 371 
+the third party is in violation of s. 501.1738, the department, 372 
+as the enforcing author ity, may bring an action against such 373 
+third party for an unfair or deceptive act or practice. For the 374 
+purpose of bringing an action pursuant to this section, ss. 375 
+        
+ENROLLED  
+CS/CS/HB 3, Engrossed 1  2024 Legislature  
+ 
+ 
+ 
+CODING: Words stricken  are deletions; words underlined  are additions.  
+hb0003 -04-er Page 16 of 20 F L O R I D A  H O U S E  O F  R E P R E S E N T A T I V E S 
+ 
+ 
+ 
+501.211 and 501.212 do not apply. In addition to other remedies 376 
+under part II of this chapter,  the department may collect a 377 
+civil penalty of up to $50,000 per violation and reasonable 378 
+attorney fees and court costs.  379 
+ (c)  A commercial entity that violates subsection (2) for 380 
+failing to prohibit access or prohibit a minor from future 381 
+access to materia l harmful to minors after a report of 382 
+unauthorized or unlawful access is liable to the minor for such 383 
+access, including court costs and reasonable attorney fees as 384 
+ordered by the court. Claimants may be awarded up to $10,000 in 385 
+damages. A civil action for a claim under this paragraph must be 386 
+brought within 1 year from the date the complainant knew, or 387 
+reasonably should have known, of the alleged violation.  388 
+ (d)  Any action under this subsection may only be brought 389 
+on behalf of or by a resident minor.  390 
+ (6)  For purposes of bringing an action under subsection 391 
+(5), a commercial entity that publishes or distributes material 392 
+harmful to minors on a website or application, if the website or 393 
+application contains a substantial portion of material harmful 394 
+to minors an d such website or application is available to be 395 
+accessed in this state, is considered to be both engaged in 396 
+substantial and not isolated activities within this state and 397 
+operating, conducting, engaging in, or carrying on a business 398 
+and doing business in t his state, and is therefore subject to 399 
+the jurisdiction of the courts of this state.  400 
+        
+ENROLLED  
+CS/CS/HB 3, Engrossed 1  2024 Legislature  
+ 
+ 
+ 
+CODING: Words stricken  are deletions; words underlined  are additions.  
+hb0003 -04-er Page 17 of 20 F L O R I D A  H O U S E  O F  R E P R E S E N T A T I V E S 
+ 
+ 
+ 
+ (7)  This section does not preclude any other available 401 
+remedy at law or equity.  402 
+ (8)(a)  If, by its own inquiry or as a result of 403 
+complaints, the department has reason t o believe that an entity 404 
+or person has engaged in, or is engaging in, an act or practice 405 
+that violates this section, the department may administer oaths 406 
+and affirmations, subpoena witnesses or matter, and collect 407 
+evidence. Within 5 days, excluding weekends  and legal holidays, 408 
+after the service of a subpoena or at any time before the return 409 
+date specified therein, whichever is longer, the party served 410 
+may file in the circuit court in the county in which it resides 411 
+or in which it transacts business and serve upon the enforcing 412 
+authority a petition for an order modifying or setting aside the 413 
+subpoena. The petitioner may raise any objection or privilege 414 
+which would be available upon service of such subpoena in a 415 
+civil action. The subpoena shall inform the party served of its 416 
+rights under this subsection.  417 
+ (b)  If the matter that the department seeks to obtain by 418 
+subpoena is located outside the state, the entity or person 419 
+subpoenaed may make it available to the department or its 420 
+representative to examine the matter at the place where it is 421 
+located. The department may designate representatives, including 422 
+officials of the state in which the matter is located, to 423 
+inspect the matter on its behalf, and may respond to similar 424 
+requests f rom officials of other states.  425 
+        
+ENROLLED  
+CS/CS/HB 3, Engrossed 1  2024 Legislature  
+ 
+ 
+ 
+CODING: Words stricken  are deletions; words underlined  are additions.  
+hb0003 -04-er Page 18 of 20 F L O R I D A  H O U S E  O F  R E P R E S E N T A T I V E S 
+ 
+ 
+ 
+ (c)  Upon failure of an entity or person without lawful 426 
+excuse to obey a subpoena and upon reasonable notice to all 427 
+persons affected, the department may apply to the circuit court 428 
+for an order compelling compliance.  429 
+ (d)  The department may request that an entity or person 430 
+that refuses to comply with a subpoena on the ground that 431 
+testimony or matter may incriminate the entity or person be 432 
+ordered by the court to provide the testimony or matter. Except 433 
+in a prosecution for per jury, an entity or individual that 434 
+complies with a court order to provide testimony or matter after 435 
+asserting a valid privilege against self -incrimination shall not 436 
+have the testimony or matter so provided, or evidence derived 437 
+therefrom, received against t he entity or person in any criminal 438 
+investigation or proceeding.  439 
+ (e)  Any entity or person upon whom a subpoena is served 440 
+pursuant to this section shall comply with the terms thereof 441 
+unless otherwise provided by order of the court. Any entity or 442 
+person th at fails to appear with the intent to avoid, evade, or 443 
+prevent compliance in whole or in part with any investigation 444 
+under this part or that removes from any place, conceals, 445 
+withholds, mutilates, alters, or destroys, or by any other means 446 
+falsifies any do cumentary material in the possession, custody, 447 
+or control of any entity or person subject to any such subpoena, 448 
+or knowingly conceals any relevant information with the intent 449 
+to avoid, evade, or prevent compliance, shall be liable for a 450 
+        
+ENROLLED  
+CS/CS/HB 3, Engrossed 1  2024 Legislature  
+ 
+ 
+ 
+CODING: Words stricken  are deletions; words underlined  are additions.  
+hb0003 -04-er Page 19 of 20 F L O R I D A  H O U S E  O F  R E P R E S E N T A T I V E S 
+ 
+ 
+ 
+civil penalty of no t more than $5,000 per week in violation, 451 
+reasonable attorney's fees, and costs.  452 
+ (9)  The department may adopt rules to implement this 453 
+section.  454 
+ Section 3.  Section 501.1738, Florida Statutes, is created 455 
+to read:  456 
+ 501.1738  Anonymous age verification. — 457 
+ (1)  As used in this section, the term "anonymous age 458 
+verification" means a commercially reasonable method used by a 459 
+government agency or a business for the purpose of age 460 
+verification which is conducted by a nongovernmental, 461 
+independent third party organ ized under the laws of a state of 462 
+the United States which:  463 
+ (a)  Has its principal place of business in a state of the 464 
+United States; and  465 
+ (b)  Is not owned or controlled by a company formed in a 466 
+foreign country, a government of a foreign country, or any o ther 467 
+entity formed in a foreign country.  468 
+ (2)  A third party conducting anonymous age verification 469 
+pursuant to this section:  470 
+ (a)  May not retain personal identifying information used 471 
+to verify age once the age of an account holder or a person 472 
+seeking an a ccount has been verified.  473 
+ (b)  May not use personal identifying information used to 474 
+verify age for any other purpose.  475 
+        
+ENROLLED  
+CS/CS/HB 3, Engrossed 1  2024 Legislature  
+ 
+ 
+ 
+CODING: Words stricken  are deletions; words underlined  are additions.  
+hb0003 -04-er Page 20 of 20 F L O R I D A  H O U S E  O F  R E P R E S E N T A T I V E S 
+ 
+ 
+ 
+ (c)  Must keep anonymous any personal identifying 476 
+information used to verify age. Such information may not be 477 
+shared or otherwise commun icated to any person.  478 
+ (d)  Must protect personal identifying information used to 479 
+verify age from unauthorized or illegal access, destruction, 480 
+use, modification, or disclosure through reasonable security 481 
+procedures and practices appropriate to the nature o f the 482 
+personal information.  483 
+ Section 4.  If any provision of this act or its application 484 
+to any person or circumstances is held invalid, the invalidity 485 
+does not affect other provisions or applications of this act 486 
+which can be given effect without the inv alid provision or 487 
+application, and to this end the provisions of this act are 488 
+severable.  489 
+ Section 5.  This act shall take effect January 1, 2025.  490

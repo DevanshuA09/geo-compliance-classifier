@@ -1,0 +1,80 @@
+# Regulation Retriever Agent Configuration
+
+# Model Configuration
+embedding:
+  model_name: "sentence-transformers/all-MiniLM-L6-v2"
+  max_length: 384
+  device: "cpu"  # or "cuda" if available
+
+# Chunking Parameters
+chunking:
+  min_chars: 600
+  max_chars: 900
+  overlap_ratio: 0.15
+  preserve_sections: true
+
+# Vector Index Configuration
+index:
+  similarity_metric: "cosine"
+  index_type: "faiss"
+  dimension: 384  # all-MiniLM-L6-v2 embedding size
+  cache_size: 1000
+
+# Retrieval Configuration
+retrieval:
+  bm25_weight: 0.3
+  dense_weight: 0.7
+  max_results: 20
+  rerank_top_k: 10
+
+# Performance Targets
+performance:
+  p95_latency_ms: 1000
+  cache_size: 500
+  max_concurrent: 10
+
+# Legal Sources Configuration
+sources:
+  EUDSA:
+    law_id: "EUDSA"
+    law_name: "EU Digital Services Act (DSA)"
+    jurisdiction: "EU"
+    file_path: "legal_texts/EUDSA.txt"
+    section_patterns:
+      - "Article \\d+(?:\\(\\d+\\))?"
+      - "Art\\. \\d+(?:\\(\\d+\\))?"
+  
+  CA_SB976:
+    law_id: "CA_SB976"
+    law_name: "California Protecting Our Kids from Social Media Addiction Act"
+    jurisdiction: "US-CA"
+    file_path: "legal_texts/Cali.txt"
+    section_patterns:
+      - "Section \\d+(?:\\.\\d+)*"
+      - "§\\s*\\d+(?:\\.\\d+)*"
+  
+  FL_HB3:
+    law_id: "FL_HB3"
+    law_name: "Florida Online Protections for Minors (HB 3)"
+    jurisdiction: "US-FL"
+    file_path: "legal_texts/Florida_text.txt"
+    section_patterns:
+      - "§\\s*\\d+(?:\\.\\d+)*(?:\\(\\d+\\))*(?:\\([a-z]\\))*"
+      - "Section \\d+(?:\\.\\d+)*"
+  
+  US_2258A:
+    law_id: "US_2258A"
+    law_name: "18 U.S.C. §2258A - Reporting requirements of providers"
+    jurisdiction: "US"
+    file_path: "legal_texts/NCMEC_reporting.txt"
+    section_patterns:
+      - "§\\s*\\d+[A-Z]*(?:\\(\\w+\\))*"
+      - "\\(\\w+\\)"
+
+# Query Expansion Terms
+query_expansion:
+  age_verification: ["age verification", "age gating", "parental verification", "minor protection"]
+  parental_consent: ["parental consent", "guardian approval", "parent permission", "authorized consent"]
+  reporting: ["reporting requirements", "notification duties", "disclosure obligations", "compliance reporting"]
+  penalties: ["penalties", "violations", "enforcement", "sanctions", "fines"]
+  minors: ["minors", "children", "under 18", "under 16", "under 14", "youth"]
