@@ -3,12 +3,16 @@
   "timestamp": "2025-08-31T10:05:00.000Z",
   "reason": "abstain",
   "priority": "high",
-  "status": "pending",
+  "status": "completed",
   "context": {
     "feature_data": {
       "name": "AI-Powered Content Recommendation",
       "description": "Uses machine learning to recommend content based on user patterns",
-      "data_types": ["content_preferences", "interaction_history", "temporal_patterns"],
+      "data_types": [
+        "content_preferences",
+        "interaction_history",
+        "temporal_patterns"
+      ],
       "storage_duration": "indefinite",
       "third_party_sharing": false,
       "user_consent": "explicit",
@@ -21,9 +25,24 @@
       "verdict": "ABSTAIN",
       "confidence": 0.45,
       "reasoning": "While explicit consent is obtained, the indefinite storage duration and limited algorithmic transparency raise concerns under GDPR. The automated decision-making aspects may require additional safeguards.",
-      "citations": ["GDPR Article 22", "GDPR Article 5(1)(e)"],
-      "recommendations": ["Review data retention periods", "Enhance algorithmic transparency", "Implement right to explanation"],
+      "citations": [
+        "GDPR Article 22",
+        "GDPR Article 5(1)(e)"
+      ],
+      "recommendations": [
+        "Review data retention periods",
+        "Enhance algorithmic transparency",
+        "Implement right to explanation"
+      ],
       "risk_level": "MEDIUM"
     }
-  }
+  },
+  "human_decision": {
+    "verdict": "COMPLIANT",
+    "confidence": 0.8,
+    "reasoning": "",
+    "reviewer": "human_reviewer",
+    "timestamp": "2025-08-31T08:19:00.500094"
+  },
+  "reviewed_at": "2025-08-31T08:19:00.500699"
 }

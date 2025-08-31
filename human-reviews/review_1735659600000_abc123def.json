@@ -3,12 +3,17 @@
   "timestamp": "2025-08-31T10:00:00.000Z",
   "reason": "low_confidence",
   "priority": "medium",
-  "status": "pending",
+  "status": "completed",
   "context": {
     "feature_data": {
       "name": "User Analytics Dashboard",
       "description": "Collects user behavior data for analytics and personalization",
-      "data_types": ["behavioral_data", "preferences", "location_data", "device_info"],
+      "data_types": [
+        "behavioral_data",
+        "preferences",
+        "location_data",
+        "device_info"
+      ],
       "storage_duration": "2 years",
       "third_party_sharing": true,
       "user_consent": "implied",
@@ -21,9 +26,24 @@
       "verdict": "NON_COMPLIANT",
       "confidence": 0.65,
       "reasoning": "The feature involves cross-border data transfer without explicit consent and lacks proper anonymization. GDPR requires explicit consent for data processing and strict controls on international transfers.",
-      "citations": ["GDPR Article 6", "GDPR Article 44-49"],
-      "recommendations": ["Implement explicit consent mechanism", "Add data anonymization", "Review cross-border transfer protocols"],
+      "citations": [
+        "GDPR Article 6",
+        "GDPR Article 44-49"
+      ],
+      "recommendations": [
+        "Implement explicit consent mechanism",
+        "Add data anonymization",
+        "Review cross-border transfer protocols"
+      ],
       "risk_level": "HIGH"
     }
-  }
+  },
+  "human_decision": {
+    "verdict": "COMPLIANT",
+    "confidence": 0.4,
+    "reasoning": "",
+    "reviewer": "human_reviewer",
+    "timestamp": "2025-08-31T08:19:07.070588"
+  },
+  "reviewed_at": "2025-08-31T08:19:07.071546"
 }
