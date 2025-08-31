@@ -37,6 +37,18 @@ venv.bak/
 *.tmp
 *.temp
 
+# Artifacts and build junk
+*.pkl
+*.faiss
+node_modules/
+test_output/
+generated_output/
+artifacts/exports/cleanup_test.csv
+artifacts/exports/evidence_TESTSET.csv
+artifacts/exports/test_dataset_export.csv
+index/faiss/index.faiss
+index/faiss/id_map.jsonl
+
 
 ignored
 
