@@ -167,8 +167,8 @@ def enhanced_compliance_analysis_mock(feature_data: Dict[str, Any]) -> Dict[str,
     Mock enhanced compliance analysis with agentic workflow
     In production, this would call the actual MCP tools
     """
-    description = feature_data['feature_description']
-    jurisdiction = feature_data['geo_country']
+    description = feature_data['description']  # Fixed key name
+    jurisdiction = feature_data.get('geo_country', 'GLOBAL')
     
     # Simulate compliance analysis based on content
     description_lower = description.lower()
@@ -314,7 +314,7 @@ def process_feature_batch(csv_file_path: str) -> List[Dict[str, Any]]:
     
     # Read CSV file
     features = []
-    with open(csv_file_path, 'r', encoding='utf-8') as file:
+    with open(csv_file_path, 'r', encoding='utf-8-sig') as file:  # Handle BOM
         reader = csv.DictReader(file)
         for row in reader:
             features.append({
@@ -334,8 +334,8 @@ def process_feature_batch(csv_file_path: str) -> List[Dict[str, Any]]:
             # Step 1: Enhanced Compliance Analysis (Mock)
             print(f"   🔍 Running enhanced compliance analysis...")
             analysis_result = enhanced_compliance_analysis_mock({
-                'feature_name': feature['name'],
-                'feature_description': feature['description'],
+                'name': feature['name'],
+                'description': feature['description'],
                 'geo_country': extract_jurisdiction_from_description(feature['description'])
             })
             
