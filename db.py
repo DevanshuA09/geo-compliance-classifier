@@ -126,7 +126,13 @@ class Decision(Base):
             
             # Human review fields
             'human_override': self.human_override,
-            'reviewer_notes': self.reviewer_notes
+            'reviewer_notes': self.reviewer_notes,
+            
+            # Backward compatibility fields for existing Streamlit app
+            'feature_text': self.feature_description or self.feature_title or 'No description',
+            'confidence': self.analysis_confidence or self.confidence_score or 0.0,
+            'human_reviewer': getattr(self, 'human_reviewer', None),
+            'last_updated': getattr(self, 'last_updated', self.updated_at)
         }
     
     def to_feature_record(self) -> 'FeatureRecord':

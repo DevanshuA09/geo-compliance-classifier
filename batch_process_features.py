@@ -25,6 +25,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 # Import our modules
 from db import save_decision, get_decision_stats, list_recent_decisions, init_database
+from enhanced_reasoning_engine import enhanced_compliance_analysis
 
 def extract_jurisdiction_from_description(description: str) -> str:
     """Extract jurisdiction from feature description"""
@@ -164,75 +165,46 @@ def extract_regulations_from_description(description: str) -> List[str]:
 
 def enhanced_compliance_analysis_mock(feature_data: Dict[str, Any]) -> Dict[str, Any]:
     """
-    Mock enhanced compliance analysis with agentic workflow
-    In production, this would call the actual MCP tools
+    Enhanced compliance analysis using the sophisticated reasoning engine
     """
-    description = feature_data['description']  # Fixed key name
+    feature_title = feature_data['name']
+    feature_description = feature_data['description']
     jurisdiction = feature_data.get('geo_country', 'GLOBAL')
     
-    # Simulate compliance analysis based on content
-    description_lower = description.lower()
+    # Use the enhanced reasoning engine
+    analysis_result = enhanced_compliance_analysis(
+        feature_title, 
+        feature_description, 
+        jurisdiction
+    )
     
-    # Determine compliance verdict based on content analysis
-    if any(term in description_lower for term in ['minor', 'underage', 'child', 'abuse']):
-        if any(term in description_lower for term in ['consent', 'parental', 'protection', 'safety']):
-            verdict = 'COMPLIANT'
-            confidence = 0.85
-            reasoning = 'Feature includes appropriate safeguards for minors with consent mechanisms'
-        else:
-            verdict = 'NON_COMPLIANT' 
-            confidence = 0.78
-            reasoning = 'Feature affects minors but lacks explicit consent or safety mechanisms'
-    elif 'privacy' in description_lower or 'data' in description_lower:
-        if 'consent' in description_lower or 'opt-in' in description_lower:
-            verdict = 'COMPLIANT'
-            confidence = 0.82
-            reasoning = 'Data processing includes user consent mechanisms'
-        else:
-            verdict = 'NON_COMPLIANT'
-            confidence = 0.75
-            reasoning = 'Data processing requires explicit user consent under applicable regulations'
-    else:
-        verdict = 'COMPLIANT'
-        confidence = 0.70
-        reasoning = 'Feature appears to meet general compliance requirements'
+    # Extract the main compliance analysis
+    compliance = analysis_result['compliance_analysis']
+    regulatory_details = analysis_result['regulatory_details']
     
-    # Extract citations based on jurisdiction and content
-    regulations = extract_regulations_from_description(description)
-    if not regulations:
-        if jurisdiction.startswith('US'):
-            regulations = ['General US Privacy Laws']
-        elif jurisdiction == 'EU':
-            regulations = ['EU General Compliance Framework']
-        else:
-            regulations = ['Platform General Terms']
-    
-    # Simulate comprehensive analysis response
+    # Format for compatibility with existing system
     return {
         'success': True,
-        'analysis_type': 'comprehensive_agentic',
+        'analysis_type': 'enhanced_regulatory_analysis',
         'compliance_analysis': {
-            'verdict': verdict,
-            'confidence': confidence,
-            'reasoning': reasoning,
-            'applicable_regulations': regulations
+            'verdict': compliance['verdict'],
+            'confidence': compliance['confidence'],
+            'reasoning': compliance['reasoning'],
+            'applicable_regulations': compliance['applicable_regulations']
         },
-        'confidence_validation': {
-            'final_confidence': confidence,
-            'ensemble_agreement': min(confidence + 0.1, 1.0),
-            'validation_notes': 'Multi-agent confidence validation completed'
+        'regulatory_details': {
+            'citations': regulatory_details['citations'],
+            'risk_level': regulatory_details['risk_level'],
+            'recommendations': regulatory_details['recommendations']
         },
-        'evidence_verification': {
-            'evidence_quality_score': 0.85,
-            'regulatory_references': [{'regulation': reg, 'confidence': 0.8} for reg in regulations],
-            'verification_status': 'verified'
-        },
+        'confidence_validation': analysis_result['confidence_validation'],
+        'evidence_verification': analysis_result['evidence_verification'],
         'active_learning': {
-            'uncertainty_score': 1.0 - confidence,
-            'requires_human_review': confidence < 0.8,
-            'learning_feedback': 'Pattern stored for future analysis'
+            'uncertainty_score': 1.0 - compliance['confidence'],
+            'requires_human_review': compliance['confidence'] < 0.8,
+            'learning_feedback': f"Regulatory analysis completed for {regulatory_details['risk_level']} feature"
         },
-        'timestamp': datetime.now().isoformat()
+        'timestamp': analysis_result['timestamp']
     }
 
 def create_canonical_feature_record(feature_name: str, feature_description: str, analysis_result: Dict[str, Any]) -> Dict[str, Any]:
@@ -246,10 +218,15 @@ def create_canonical_feature_record(feature_name: str, feature_description: str,
     
     # Extract compliance information
     compliance_analysis = analysis_result['compliance_analysis']
+    regulatory_details = analysis_result.get('regulatory_details', {})
+    
     verdict = compliance_analysis['verdict']
     confidence = compliance_analysis['confidence']
     reasoning = compliance_analysis['reasoning']
     regulations = compliance_analysis['applicable_regulations']
+    citations = regulatory_details.get('citations', [])
+    recommendations = regulatory_details.get('recommendations', [])
+    risk_level = regulatory_details.get('risk_level', 'medium_risk')
     
     # Map verdict to label
     label_mapping = {
@@ -281,22 +258,25 @@ def create_canonical_feature_record(feature_name: str, feature_description: str,
         'implicated_regulations': regulations,
         'data_practices': extract_data_practices_from_description(feature_description),
         'rationale': reasoning,
-        'risk_tags': extract_risk_tags_from_description(feature_description),
+        'risk_tags': extract_risk_tags_from_description(feature_description) + [risk_level],
         'confidence_score': float(confidence),
         'codename_hits_json': [],  # Would be populated by terminology extraction
         
         # Analysis-specific fields for compatibility
         'jurisdiction': jurisdiction,
         'law': regulations[0] if regulations else 'GENERAL',
-        'trigger': 'batch_processing_analysis',
+        'trigger': 'enhanced_regulatory_analysis',
         'verdict': verdict,
         'confidence': confidence,
-        'citations': regulations,
+        'citations': citations,
         'reasoning': reasoning,
+        'recommendations': recommendations,
         'llm_output': {
-            'tool_used': 'enhanced_compliance_analysis',
+            'tool_used': 'enhanced_reasoning_engine',
             'full_response': analysis_result,
-            'processing_method': 'batch_workflow',
+            'processing_method': 'enhanced_batch_workflow',
+            'risk_level': risk_level,
+            'regulatory_details': regulatory_details,
             'timestamp': datetime.now().isoformat()
         }
     }

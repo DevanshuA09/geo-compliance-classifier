@@ -524,13 +524,20 @@ def dashboard_section():
             # Convert to DataFrame for better display
             display_data = []
             for decision in decisions:
+                # Use canonical field names with fallback for backward compatibility
+                feature_display = decision.get('feature_title', decision.get('feature_description', decision.get('feature_text', 'Unknown Feature')))
+                if len(feature_display) > 50:
+                    feature_display = feature_display[:50] + "..."
+                
+                confidence_score = decision.get('confidence_score', decision.get('analysis_confidence', decision.get('confidence', 0.0)))
+                
                 display_data.append({
                     'ID': decision['id'],
-                    'Feature': decision['feature_text'][:50] + "..." if len(decision['feature_text']) > 50 else decision['feature_text'],
+                    'Feature': feature_display,
                     'Jurisdiction': decision['jurisdiction'],
                     'Law': decision['law'],
                     'AI Decision': decision['require_compliance'],
-                    'Confidence': f"{decision['confidence']:.2f}",
+                    'Confidence': f"{float(confidence_score):.2f}",
                     'Human Override': decision['human_override'] or 'None',
                     'Created': decision['created_at'][:16] if decision['created_at'] else 'Unknown'
                 })
@@ -575,10 +582,11 @@ def dashboard_section():
                         })
                     
                     with col2:
-                        st.write("**Feature Text:**")
+                        st.write("**Feature Details:**")
+                        feature_text = selected_decision.get('feature_description', selected_decision.get('feature_text', 'No description available'))
                         st.text_area(
                             "Feature Description:",
-                            selected_decision['feature_text'],
+                            feature_text,
                             height=100,
                             disabled=True
                         )
@@ -607,7 +615,7 @@ def dashboard_section():
     # Export functionality
     st.subheader("📤 Export Data")
     
-    col1, col2 = st.columns(2)
+    col1, col2, col3 = st.columns(3)
     
     with col1:
         if st.button("📄 Export to JSON"):
@@ -619,7 +627,7 @@ def dashboard_section():
                     # Provide download link
                     with open(filename, 'r') as f:
                         st.download_button(
-                            label="⬇️ Download Export File",
+                            label="⬇️ Download JSON Export",
                             data=f.read(),
                             file_name=filename,
                             mime="application/json"
@@ -630,6 +638,51 @@ def dashboard_section():
                 st.error(f"Export error: {e}")
     
     with col2:
+        if st.button("📊 Export to CSV"):
+            try:
+                # Import the CSV export function
+                import subprocess
+                result = subprocess.run([
+                    sys.executable, "export_csv.py"
+                ], capture_output=True, text=True, cwd=PROJECT_ROOT)
+                
+                if result.returncode == 0:
+                    # Find the generated CSV files
+                    import glob
+                    csv_files = glob.glob("compliance_decisions_export_*.csv")
+                    summary_files = glob.glob("compliance_summary_*.csv")
+                    
+                    if csv_files:
+                        latest_csv = max(csv_files, key=os.path.getctime)
+                        st.success(f"CSV exported: {latest_csv}")
+                        
+                        # Provide download link for full export
+                        with open(latest_csv, 'r', encoding='utf-8') as f:
+                            st.download_button(
+                                label="⬇️ Download Full CSV Export",
+                                data=f.read(),
+                                file_name=latest_csv,
+                                mime="text/csv"
+                            )
+                    
+                    if summary_files:
+                        latest_summary = max(summary_files, key=os.path.getctime)
+                        st.success(f"Summary CSV: {latest_summary}")
+                        
+                        # Provide download link for summary
+                        with open(latest_summary, 'r', encoding='utf-8') as f:
+                            st.download_button(
+                                label="⬇️ Download Summary CSV",
+                                data=f.read(),
+                                file_name=latest_summary,
+                                mime="text/csv"
+                            )
+                else:
+                    st.error(f"CSV export failed: {result.stderr}")
+            except Exception as e:
+                st.error(f"CSV export error: {e}")
+    
+    with col3:
         # Search functionality
         st.write("**Search Decisions:**")
         search_query = st.text_input("Search in feature text or notes:")
@@ -644,7 +697,7 @@ def dashboard_section():
                     search_df = pd.DataFrame([
                         {
                             'ID': r['id'],
-                            'Feature': r['feature_text'][:50] + "...",
+                            'Feature': (r.get('feature_title', r.get('feature_description', r.get('feature_text', 'Unknown')))[:50] + "..."),
                             'Decision': r['require_compliance'],
                             'Created': r['created_at'][:16]
                         }
@@ -672,10 +725,12 @@ def human_in_loop_section():
         
         if pending_decisions:
             # Decision Selection
-            decision_options = {
-                f"ID {d['id']} - {d['feature_text'][:50]}...": d
-                for d in pending_decisions[:10]  # Show top 10
-            }
+            decision_options = {}
+            for d in pending_decisions[:10]:  # Show top 10
+                feature_display = d.get('feature_title', d.get('feature_description', d.get('feature_text', 'Unknown Feature')))
+                if len(feature_display) > 50:
+                    feature_display = feature_display[:50] + "..."
+                decision_options[f"ID {d['id']} - {feature_display}"] = d
             
             selected_decision_key = st.selectbox(
                 "Select Decision to Review:",
@@ -698,13 +753,15 @@ def human_in_loop_section():
                     with col1a:
                         render_verdict_badge(selected_decision['require_compliance'])
                     with col1b:
-                        st.metric("Confidence", f"{selected_decision['confidence']:.2f}")
+                        confidence_score = selected_decision.get('confidence_score', selected_decision.get('analysis_confidence', selected_decision.get('confidence', 0.0)))
+                        st.metric("Confidence", f"{float(confidence_score):.2f}")
                     with col1c:
                         st.metric("Jurisdiction", selected_decision['jurisdiction'])
                     
+                    feature_text = selected_decision.get('feature_description', selected_decision.get('feature_text', 'No description available'))
                     st.text_area(
                         "Feature Description:",
-                        selected_decision['feature_text'],
+                        feature_text,
                         height=100,
                         disabled=True
                     )
@@ -809,7 +866,7 @@ def human_in_loop_section():
                                         'reasoning': reviewer_notes
                                     },
                                     'feature_data': {
-                                        'description': selected_decision['feature_text'],
+                                        'description': selected_decision.get('feature_description', selected_decision.get('feature_text', 'No description')),
                                         'jurisdiction': selected_decision['jurisdiction']
                                     }
                                 }
@@ -848,7 +905,7 @@ def human_in_loop_section():
                         # Re-run analysis with current feature data
                         with st.spinner("Re-running analysis..."):
                             analysis_params = {
-                                'feature_text': selected_decision['feature_text'],
+                                'feature_text': selected_decision.get('feature_description', selected_decision.get('feature_text', 'No description')),
                                 'jurisdiction': selected_decision['jurisdiction']
                             }
                             
@@ -956,7 +1013,7 @@ def human_in_loop_section():
             override_df = pd.DataFrame([
                 {
                     'ID': d['id'],
-                    'Feature': d['feature_text'][:40] + "...",
+                    'Feature': (d.get('feature_title', d.get('feature_description', d.get('feature_text', 'Unknown')))[:40] + "..."),
                     'AI Decision': d['require_compliance'],
                     'Human Override': d['human_override'],
                     'Jurisdiction': d['jurisdiction'],
@@ -1450,13 +1507,20 @@ def history_section():
                         # Calculate agreement
                         agreement = "✅" if decision['human_override'] == decision['require_compliance'] else "❌" if decision['human_override'] else "⏳"
                         
+                        # Use canonical field names with fallback
+                        feature_display = decision.get('feature_title', decision.get('feature_description', decision.get('feature_text', 'Unknown Feature')))
+                        if len(feature_display) > 60:
+                            feature_display = feature_display[:60] + "..."
+                        
+                        confidence_score = decision.get('confidence_score', decision.get('analysis_confidence', decision.get('confidence', 0.0)))
+                        
                         display_data.append({
                             'ID': decision['id'],
-                            'Feature': decision['feature_text'][:60] + ("..." if len(decision['feature_text']) > 60 else ""),
+                            'Feature': feature_display,
                             'Jurisdiction': decision['jurisdiction'],
                             'Law': decision['law'],
                             'AI Decision': decision['require_compliance'],
-                            'Confidence': f"{decision['confidence']:.2f}",
+                            'Confidence': f"{float(confidence_score):.2f}",
                             'Human Override': decision['human_override'] or '—',
                             'Agreement': agreement,
                             'Created': decision['created_at'][:16] if decision['created_at'] else 'Unknown',
