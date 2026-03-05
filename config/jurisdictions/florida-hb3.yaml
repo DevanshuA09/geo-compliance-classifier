@@ -1,0 +1,147 @@
+# Florida HB 3 - Online Protections for Minors Configuration
+
+jurisdiction:
+  name: "Florida Online Protections for Minors (HB 3)"
+  code: "US-FL-HB3"
+  effective_date: "2024-01-01"
+  scope: "Florida residents under 18"
+  enforcement_agency: "Florida Department of Legal Affairs"
+  
+age_restrictions:
+  prohibited_under: 14
+  parental_consent_required: [14, 15]
+  enhanced_protections_under: 18
+  verification_required: true
+  
+addictive_features:
+  prohibited:
+    - infinite_scroll
+    - autoplay_videos  
+    - push_notifications_nighttime
+    - live_streaming_under_16
+    - variable_reward_schedules
+    - social_approval_indicators
+    - endless_content_feeds
+    - fomo_triggers
+  
+  mitigations_required:
+    - daily_time_limits
+    - break_reminders
+    - parental_oversight
+    - usage_warnings
+    - auto_logout_timer
+  
+  exceptions:
+    - educational_content
+    - health_emergency_alerts
+    - parental_communications
+
+notification_curfew:
+  enabled: true
+  start_time: "22:00"
+  end_time: "07:00"
+  timezone: "user_location"
+  apply_to_ages: [13, 14, 15, 16, 17]
+  exceptions:
+    - emergency_alerts
+    - parental_messages
+    - safety_notifications
+    - account_security_alerts
+
+data_restrictions:
+  behavioral_tracking: false
+  targeted_advertising: false
+  precise_location: false
+  biometric_data: false
+  cross_platform_tracking: false
+  
+  allowed_data:
+    - basic_profile_info
+    - content_preferences_general
+    - safety_moderation_data
+    - parental_control_data
+
+parental_controls:
+  required_features:
+    - account_oversight
+    - time_limit_setting
+    - content_filtering
+    - activity_reporting
+    - friend_approval
+    - privacy_setting_control
+  
+  reporting_frequency: "weekly"
+  emergency_override: true
+  
+content_restrictions:
+  age_appropriate_defaults: true
+  mature_content_blocking: true
+  advertiser_restrictions:
+    - no_targeted_ads_minors
+    - no_data_broker_sharing
+    - no_behavioral_profiling
+
+privacy_defaults:
+  profile_visibility: "private"
+  location_sharing: "disabled"
+  contact_discovery: "disabled"
+  data_sharing_third_party: "disabled"
+  search_visibility: "disabled"
+
+enforcement:
+  penalties:
+    per_violation: 50000
+    systematic_violations: 250000
+    repeated_violations_multiplier: 2.0
+  
+  audit_requirements:
+    retention_years: 7
+    report_frequency: "quarterly"
+    external_audit_required: true
+  
+  safe_harbors:
+    good_faith_compliance: true
+    prompt_remediation: true
+    proactive_controls: true
+
+implementation_timeline:
+  phase_1_deadline: "2024-03-01"  # Age verification
+  phase_2_deadline: "2024-06-01"  # Feature restrictions  
+  phase_3_deadline: "2024-09-01"  # Full parental controls
+  full_compliance_deadline: "2024-12-31"
+
+monitoring_requirements:
+  metrics_tracking:
+    - minor_account_creation_attempts
+    - parental_consent_completion_rates
+    - feature_restriction_effectiveness
+    - time_limit_adherence
+    - curfew_violation_rates
+    - parental_control_activation_rates
+  
+  reporting_obligations:
+    - quarterly_compliance_reports
+    - incident_reporting_24_hours
+    - annual_third_party_audit
+    - legislative_committee_briefings
+
+technical_requirements:
+  age_verification:
+    methods_accepted:
+      - government_issued_id
+      - credit_card_verification
+      - third_party_verification_service
+    
+    accuracy_threshold: 0.95
+    fraud_detection_required: true
+    
+  audit_logging:
+    log_all_age_verifications: true
+    log_all_feature_restrictions: true
+    log_all_parental_actions: true
+    retention_period_years: 7
+    
+  data_portability:
+    minor_data_deletion_expedited: true
+    parental_data_access: true
+    account_deactivation_reversible: 30  # days

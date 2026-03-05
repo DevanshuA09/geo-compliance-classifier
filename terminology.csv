@@ -1,0 +1,30 @@
+term,explanation
+ASL,Age Segmentation Logic - System for identifying and categorizing users by age groups for compliance
+GH,Geo-Hash - Geographic targeting and restriction system for jurisdiction-specific features
+EchoTrace,Audit logging system that tracks user actions and system decisions for compliance reporting
+ShadowMode,Testing mode where features are deployed but their effects are logged without impacting user experience
+PF,Personalization Feed - Algorithm that customizes content recommendations based on user behavior
+NR,Non-Reversible - Configuration setting that cannot be changed by users without administrative intervention
+FR,Feature Registry - System for tracking and managing feature rollouts and configurations
+CDS,Compliance Detection System - Automated system for identifying potential policy violations
+T5,Threat Level 5 - Highest severity classification for content requiring immediate escalation
+Softblock,Temporary content restriction that can be reviewed and potentially reversed
+NSP,Non-Safe Platform - Content classification indicating material unsuitable for minors
+Redline,Critical alert status requiring immediate legal or compliance team review
+Jellybean,Parental control framework for managing minor user accounts and permissions
+IMT,Identity Management Tool - System for verifying and managing user identity and permissions
+BB,Behavior Baseline - Machine learning model that establishes normal user behavior patterns
+DRT,Data Retention Tool - System managing automated data lifecycle and deletion policies
+Spanner,A/B testing framework for controlled feature rollouts and experimentation
+Glow,Monitoring system that tracks feature health and performance metrics during rollouts
+LCP,Legal Compliance Parameters - Configurable rules governing content restrictions
+Snowcap,Enhanced protection system specifically designed for underage user accounts
+NCMEC,National Center for Missing and Exploited Children - US organization for reporting child abuse material
+DSA,Digital Services Act - EU regulation governing online platform transparency and content moderation
+SB976,California Senate Bill 976 - Protecting Our Kids from Social Media Addiction Act
+Utah Social Media Regulation Act,Utah legislation requiring age verification and parental controls for social media platforms
+EEA,European Economic Area - Geographic region subject to EU digital regulations
+CA,Canada - Geographic region identifier for feature targeting
+US,United States - Geographic region identifier for feature targeting
+BR,Brazil - Geographic region identifier for feature targeting
+ID,Indonesia - Geographic region identifier for feature targeting

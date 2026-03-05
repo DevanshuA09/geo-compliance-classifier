@@ -1,0 +1,82 @@
+[
+  {
+    "feedback_id": "FB-sample-001",
+    "timestamp": "2025-01-15T15:00:00.000000",
+    "feedback_type": "improvement",
+    "description": "Need better handling of edge cases in age verification scenarios",
+    "priority": "high",
+    "status": "open",
+    "reviewer": "compliance_team",
+    "category": "model_accuracy"
+  },
+  {
+    "feedback_id": "FB-sample-002",
+    "timestamp": "2025-01-15T16:30:00.000000",
+    "feedback_type": "bug_report",
+    "description": "System incorrectly flags GDPR-compliant features as non-compliant",
+    "priority": "medium",
+    "status": "in_progress",
+    "reviewer": "legal_team",
+    "category": "false_positive"
+  },
+  {
+    "feedback_id": "FB-sample-003",
+    "timestamp": "2025-01-15T17:45:00.000000",
+    "feedback_type": "feature_request",
+    "description": "Add support for new California privacy regulations",
+    "priority": "high",
+    "status": "open",
+    "reviewer": "product_team",
+    "category": "regulation_coverage"
+  },
+  {
+    "feedback_id": "FB-sample-004",
+    "timestamp": "2025-01-15T18:15:00.000000",
+    "feedback_type": "improvement",
+    "description": "Improve confidence scoring for ambiguous compliance cases",
+    "priority": "medium",
+    "status": "open",
+    "reviewer": "ml_team",
+    "category": "model_confidence"
+  },
+  {
+    "feedback_id": "FB-sample-005",
+    "timestamp": "2025-01-15T19:00:00.000000",
+    "feedback_type": "bug_report",
+    "description": "RAG system occasionally fails to retrieve relevant regulatory context",
+    "priority": "low",
+    "status": "resolved",
+    "reviewer": "engineering_team",
+    "category": "system_reliability"
+  },
+  {
+    "feedback_id": "9d22be54",
+    "text": "Another compliance example",
+    "original_prediction": "Unclear",
+    "corrected_prediction": "Compliant",
+    "confidence": 0.8,
+    "reviewer_notes": "Clear compliance indicators present",
+    "timestamp": "2025-08-29T22:52:24.085569",
+    "regulatory_references": []
+  },
+  {
+    "feedback_id": "69706f0d",
+    "text": "Another compliance example",
+    "original_prediction": "Unclear",
+    "corrected_prediction": "Compliant",
+    "confidence": 0.8,
+    "reviewer_notes": "Clear compliance indicators present",
+    "timestamp": "2025-08-29T22:53:12.897270",
+    "regulatory_references": []
+  },
+  {
+    "feedback_id": "833efc38",
+    "text": "Another compliance example",
+    "original_prediction": "Unclear",
+    "corrected_prediction": "Compliant",
+    "confidence": 0.8,
+    "reviewer_notes": "Clear compliance indicators present",
+    "timestamp": "2025-08-29T22:56:00.654571",
+    "regulatory_references": []
+  }
+]

@@ -1,0 +1,37 @@
+{
+  "id": "review_1735658200000_stu123vwx",
+  "timestamp": "2025-08-31T09:30:00.000Z",
+  "reason": "conflict",
+  "priority": "high",
+  "status": "completed",
+  "context": {
+    "feature_data": {
+      "name": "Biometric Authentication",
+      "description": "Uses fingerprint and face recognition for user authentication",
+      "data_types": ["biometric_data", "device_identifiers", "authentication_logs"],
+      "storage_duration": "until_account_deletion",
+      "third_party_sharing": false,
+      "user_consent": "explicit",
+      "data_retention_policy": "user_controlled",
+      "encryption": "end_to_end",
+      "local_processing": true
+    },
+    "jurisdiction": "EU",
+    "analysis_result": {
+      "verdict": "NON_COMPLIANT",
+      "confidence": 0.55,
+      "reasoning": "Biometric data processing requires special safeguards under GDPR Article 9. While consent is explicit and encryption is implemented, the storage duration and processing basis need clarification.",
+      "citations": ["GDPR Article 9", "GDPR Article 25"],
+      "recommendations": ["Review legal basis for biometric processing", "Implement additional technical safeguards", "Document necessity assessment"],
+      "risk_level": "HIGH"
+    }
+  },
+  "human_decision": {
+    "verdict": "NEEDS_MODIFICATION",
+    "confidence": 0.85,
+    "reasoning": "The biometric authentication feature has good technical safeguards (encryption, local processing) but needs stronger legal foundations. Recommend implementing explicit biometric consent flows, adding necessity justification documentation, and ensuring GDPR Article 9 compliance with clear legal basis beyond just consent.",
+    "reviewer": "privacy_counsel_mike",
+    "timestamp": "2025-08-31T09:42:00.000Z"
+  },
+  "reviewed_at": "2025-08-31T09:42:00.000Z"
+}

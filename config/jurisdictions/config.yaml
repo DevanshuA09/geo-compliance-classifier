@@ -1,0 +1,185 @@
+# EU Digital Services Act (DSA) Configuration
+
+jurisdiction:
+  name: "EU Digital Services Act (DSA)"
+  code: "EU-DSA"
+  effective_date: "2024-02-17"
+  scope: "Very Large Online Platforms (45M+ EU users)"
+  enforcement_agency: "European Commission"
+
+platform_obligations:
+  vlop_threshold: 45000000  # 45 million EU users
+  vlop_designation_required: true
+  risk_assessment_required: true
+  transparency_reporting_required: true
+
+content_moderation:
+  illegal_content_categories:
+    - terrorism_content
+    - child_abuse_material
+    - hate_speech
+    - non_consensual_intimate_images
+    - illegal_goods_services
+    - copyright_infringement
+    - defamation
+    - cyberbullying
+
+  response_times:
+    priority_1_hours: 1     # CSAM, terrorism
+    priority_2_hours: 24    # Hate speech, harassment  
+    priority_3_hours: 72    # Other illegal content
+    
+  moderation_requirements:
+    human_oversight_required: true
+    automated_detection_allowed: true
+    user_flagging_system_required: true
+    transparent_policies_required: true
+
+recommender_systems:
+  transparency_obligations:
+    algorithm_explanation_required: true
+    personalization_controls_required: true
+    non_profiling_option_required: true
+    recommendation_parameters_disclosed: true
+    
+  user_controls:
+    disable_profiling_option: true
+    modify_recommendations: true
+    view_recommendation_criteria: true
+    opt_out_personalization: true
+
+advertising_transparency:
+  ad_targeting_disclosure: true
+  advertiser_identification: true
+  ad_repository_required: true
+  political_ad_restrictions: true
+  
+  prohibited_targeting:
+    - minors_behavioral_profiling
+    - sensitive_personal_data
+    - health_condition_inference
+    - political_opinion_inference
+
+risk_assessment:
+  annual_assessment_required: true
+  risk_categories:
+    - illegal_content_dissemination
+    - fundamental_rights_violations
+    - manipulation_inauthentic_use
+    - gender_based_violence
+    - child_protection
+    - democratic_processes
+    - public_security
+    - civic_discourse
+    
+  mitigation_measures_required: true
+  independent_audit_required: true
+
+transparency_reporting:
+  reporting_frequency: "semi-annual"
+  public_availability: true
+  
+  required_metrics:
+    - content_moderation_actions
+    - automated_vs_human_decisions
+    - user_appeals_submitted
+    - appeals_upheld_percentage
+    - average_response_times
+    - user_flagging_statistics
+    - recommendation_system_usage
+    - advertising_transparency_data
+
+data_access_requirements:
+  researcher_data_access: true
+  vetted_researcher_program: true
+  data_categories_available:
+    - public_content_data
+    - engagement_metrics
+    - recommendation_signals
+    - content_moderation_data
+    
+crisis_response:
+  crisis_protocols_required: true
+  crisis_response_mechanisms:
+    - temporary_content_restrictions
+    - algorithm_adjustment_capabilities
+    - enhanced_moderation_deployment
+    - cross_platform_coordination
+
+user_rights:
+  appeal_mechanisms_required: true
+  appeal_response_time_days: 30
+  human_review_guaranteed: true
+  external_dispute_resolution: true
+  
+  notification_requirements:
+    - content_removal_notification
+    - account_restriction_notification
+    - appeal_process_information
+    - decision_reasoning_provided
+
+compliance_monitoring:
+  internal_compliance_function: true
+  compliance_officer_required: true
+  board_level_oversight: true
+  
+  audit_requirements:
+    - annual_independent_audit
+    - public_audit_summary
+    - commission_access_guaranteed
+    - audit_methodology_approved
+
+enforcement:
+  penalties:
+    max_fine_percentage: 6.0  # 6% of global annual turnover
+    structural_remedies: true
+    interim_measures: true
+    
+  progressive_enforcement:
+    - formal_warning
+    - compliance_commitments
+    - binding_commitments
+    - financial_penalties
+    - structural_remedies
+
+technical_standards:
+  api_access_required: true
+  data_formats_standardized: true
+  interoperability_requirements: true
+  
+  security_requirements:
+    - end_to_end_encryption_support
+    - secure_data_transmission
+    - privacy_by_design
+    - data_minimization
+
+child_protection:
+  enhanced_protections: true
+  age_appropriate_design: true
+  default_privacy_settings: true
+  parental_control_tools: true
+  
+  prohibited_practices:
+    - behavioral_advertising_minors
+    - dark_patterns_minors
+    - addictive_design_minors
+    - data_profiling_minors
+
+monitoring_metrics:
+  content_moderation:
+    - total_reports_received
+    - reports_actioned_percentage
+    - false_positive_rates
+    - user_satisfaction_appeals
+    
+  recommender_transparency:
+    - users_accessing_controls
+    - non_profiling_adoption_rate
+    - algorithm_explanation_views
+    - personalization_opt_out_rate
+    
+  risk_mitigation:
+    - risk_assessment_completion
+    - mitigation_measure_effectiveness
+    - external_audit_findings
+    - user_safety_indicators

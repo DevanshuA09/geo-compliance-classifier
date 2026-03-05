@@ -1,0 +1,36 @@
+{
+  "id": "review_1735658800000_mno456pqr",
+  "timestamp": "2025-08-31T09:40:00.000Z",
+  "reason": "low_confidence",
+  "priority": "medium",
+  "status": "completed",
+  "context": {
+    "feature_data": {
+      "name": "Cookie Consent Manager",
+      "description": "Manages user cookie preferences and consent",
+      "data_types": ["consent_preferences", "cookie_data", "session_info"],
+      "storage_duration": "1 year",
+      "third_party_sharing": false,
+      "user_consent": "explicit",
+      "data_retention_policy": "automatic_deletion",
+      "granular_controls": true
+    },
+    "jurisdiction": "EU",
+    "analysis_result": {
+      "verdict": "COMPLIANT",
+      "confidence": 0.75,
+      "reasoning": "Feature implements explicit consent with granular controls and appropriate retention period. Aligns with GDPR requirements for cookie consent.",
+      "citations": ["GDPR Article 7", "ePrivacy Directive"],
+      "recommendations": [],
+      "risk_level": "LOW"
+    }
+  },
+  "human_decision": {
+    "verdict": "COMPLIANT",
+    "confidence": 0.95,
+    "reasoning": "Reviewed the implementation details. The cookie consent manager properly implements all GDPR requirements including explicit consent, granular controls, and clear withdrawal mechanisms. The 1-year retention period is appropriate for consent records.",
+    "reviewer": "compliance_expert_sarah",
+    "timestamp": "2025-08-31T09:45:00.000Z"
+  },
+  "reviewed_at": "2025-08-31T09:45:00.000Z"
+}

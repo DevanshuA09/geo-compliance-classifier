@@ -1,0 +1,107 @@
+[
+  {
+    "id": "age_gating_florida",
+    "query": "age-gating for users under 14 in Florida",
+    "expected_laws": ["FL_HB3"],
+    "expected_sections": ["501.1736"],
+    "description": "Florida prohibitions for minors under 14"
+  },
+  {
+    "id": "parental_consent_california", 
+    "query": "parental consent requirement in California for social media",
+    "expected_laws": ["CA_SB976"],
+    "expected_sections": ["22581"],
+    "description": "California parental consent rules"
+  },
+  {
+    "id": "ncmec_reporting_requirements",
+    "query": "what must be reported to NCMEC",
+    "expected_laws": ["US_2258A"],
+    "expected_sections": ["2258A"],
+    "description": "NCMEC reporting obligations"
+  },
+  {
+    "id": "dsa_systemic_risk_minors",
+    "query": "DSA systemic risk obligations for minors",
+    "expected_laws": ["EUDSA"],
+    "expected_sections": ["Article 28", "Article 34"],
+    "description": "EU DSA systemic risk assessment for minors"
+  },
+  {
+    "id": "florida_parental_verification",
+    "query": "parental verification requirements Florida HB3",
+    "expected_laws": ["FL_HB3"],
+    "expected_sections": ["501.1736"],
+    "description": "Florida parental verification process"
+  },
+  {
+    "id": "california_default_settings",
+    "query": "default privacy settings for minors California",
+    "expected_laws": ["CA_SB976"],
+    "expected_sections": ["22581"],
+    "description": "California default privacy protections"
+  },
+  {
+    "id": "reporting_timeline_ncmec",
+    "query": "reporting timeline for child exploitation material",
+    "expected_laws": ["US_2258A"],
+    "expected_sections": ["2258A"],
+    "description": "NCMEC reporting deadlines"
+  },
+  {
+    "id": "dsa_transparency_obligations",
+    "query": "transparency reporting obligations EU DSA",
+    "expected_laws": ["EUDSA"],
+    "expected_sections": ["Article 15", "Article 42"],
+    "description": "EU DSA transparency requirements"
+  },
+  {
+    "id": "age_verification_methods",
+    "query": "age verification methods for social media platforms",
+    "expected_laws": ["FL_HB3", "CA_SB976"],
+    "expected_sections": ["501.1736", "22581"],
+    "description": "Age verification techniques across jurisdictions"
+  },
+  {
+    "id": "penalties_violations_florida",
+    "query": "penalties for violations of minor protection laws Florida",
+    "expected_laws": ["FL_HB3"],
+    "expected_sections": ["501.1736"],
+    "description": "Florida enforcement and penalties"
+  },
+  {
+    "id": "risk_assessment_procedures",
+    "query": "risk assessment procedures for platforms with minors",
+    "expected_laws": ["EUDSA"],
+    "expected_sections": ["Article 34"],
+    "description": "EU DSA risk assessment requirements"
+  },
+  {
+    "id": "notification_requirements_parents",
+    "query": "notification requirements to parents",
+    "expected_laws": ["FL_HB3", "CA_SB976"],
+    "expected_sections": ["501.1736", "22581"],
+    "description": "Parent notification obligations"
+  },
+  {
+    "id": "data_protection_minors",
+    "query": "data protection requirements for users under 16",
+    "expected_laws": ["EUDSA", "CA_SB976"],
+    "expected_sections": ["Article 28", "22581"],
+    "description": "Minor data protection across jurisdictions"
+  },
+  {
+    "id": "content_recommendation_restrictions",
+    "query": "content recommendation restrictions for minors",
+    "expected_laws": ["CA_SB976", "EUDSA"],
+    "expected_sections": ["22581", "Article 28"],
+    "description": "Algorithmic restrictions for minor users"
+  },
+  {
+    "id": "enforcement_mechanisms",
+    "query": "enforcement mechanisms for social media compliance",
+    "expected_laws": ["FL_HB3", "CA_SB976", "EUDSA"],
+    "expected_sections": ["501.1736", "22581", "Article 51"],
+    "description": "Cross-jurisdictional enforcement approaches"
+  }
+]

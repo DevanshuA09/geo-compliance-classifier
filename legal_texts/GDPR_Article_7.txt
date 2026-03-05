@@ -1,0 +1,22 @@
+GDPR Article 7: Conditions for Consent
+
+Section 1: General Requirements
+When processing is based on consent, the controller shall be able to demonstrate that the data subject has consented to processing of his or her personal data.
+
+Section 2: Explicit Consent
+If the data subject's consent is given in the context of a written declaration which concerns other matters, the request for consent shall be presented in a manner which is clearly distinguishable from the other matters, in an intelligible and easily accessible form, using clear and plain language.
+
+Section 3: Withdrawal of Consent
+The data subject shall have the right to withdraw his or her consent at any time. The withdrawal of consent shall not affect the lawfulness of processing based on consent before its withdrawal. Prior to giving consent, the data subject shall be informed thereof. It shall be as easy to withdraw as to give consent.
+
+Section 4: Assessment of Consent
+When assessing whether consent is freely given, utmost account shall be taken of whether, inter alia, the performance of a contract, including the provision of a service, is conditional on consent to the processing of personal data that is not necessary for the performance of that contract.
+
+Section 5: Data Minimization
+Organizations must obtain explicit user consent before processing personal data and shall implement data minimization practices. Personal data shall be adequate, relevant and limited to what is necessary in relation to the purposes for which they are processed.
+
+Section 6: Documentation Requirements
+The controller shall maintain records of processing activities under its responsibility and shall make the records available to the supervisory authority on request.
+
+Section 7: Enforcement
+Failure to comply with consent requirements may result in administrative fines up to 20 million euros, or in the case of an undertaking, up to 4% of the total worldwide annual turnover of the preceding financial year, whichever is higher.

@@ -1,0 +1,307 @@
+name: "Compliance Audit"
+
+on:
+  push:
+    branches: [ main, develop ]
+    paths: 
+      - 'src/compliance/**'
+      - 'config/**'
+      - 'tests/**'
+  pull_request:
+    branches: [ main ]
+    paths:
+      - 'src/compliance/**'
+      - 'config/**'
+  schedule:
+    # Run compliance audit daily at 2 AM UTC
+    - cron: '0 2 * * *'
+  workflow_dispatch:
+    inputs:
+      jurisdiction:
+        description: 'Specific jurisdiction to audit (optional)'
+        required: false
+        type: choice
+        options:
+          - 'all'
+          - 'EU-DSA'
+          - 'US-FL-HB3'
+          - 'US-CA-SB976'
+          - 'US-COPPA'
+          - 'US-NCMEC'
+
+env:
+  PYTHON_VERSION: '3.10'
+
+jobs:
+  configuration-validation:
+    name: "Validate Configuration Files"
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+          
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+          pip install jsonschema yamllint
+          
+      - name: Validate YAML syntax
+        run: |
+          yamllint config/ -d relaxed
+          
+      - name: Validate configuration schemas
+        run: |
+          python scripts/validate-config.py
+          
+      - name: Check for conflicting rules
+        run: |
+          python scripts/detect-rule-conflicts.py
+
+  compliance-testing:
+    name: "Run Compliance Tests"
+    runs-on: ubuntu-latest
+    needs: configuration-validation
+    
+    strategy:
+      matrix:
+        jurisdiction: ['EU-DSA', 'US-FL-HB3', 'US-CA-SB976', 'US-COPPA']
+        
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+          
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+          pip install -r requirements_dev.txt
+          
+      - name: Run jurisdiction-specific tests
+        run: |
+          pytest tests/acceptance/ -k "${{ matrix.jurisdiction }}" -v --junitxml=test-results-${{ matrix.jurisdiction }}.xml
+          
+      - name: Generate compliance report
+        run: |
+          python scripts/generate-compliance-report.py --jurisdiction="${{ matrix.jurisdiction }}"
+          
+      - name: Upload test results
+        uses: actions/upload-artifact@v3
+        if: always()
+        with:
+          name: test-results-${{ matrix.jurisdiction }}
+          path: test-results-${{ matrix.jurisdiction }}.xml
+
+  feature-compliance-audit:
+    name: "Audit Feature Compliance"
+    runs-on: ubuntu-latest
+    needs: configuration-validation
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+          
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+          
+      - name: Audit age verification systems
+        run: |
+          python src/compliance/age-verification/audit.py
+          
+      - name: Audit parental controls
+        run: |
+          python src/compliance/parental-controls/audit.py
+          
+      - name: Audit content moderation
+        run: |
+          python src/compliance/content-moderation/audit.py
+          
+      - name: Audit algorithmic transparency
+        run: |
+          python src/compliance/algorithmic-controls/audit.py
+          
+      - name: Generate feature audit report
+        run: |
+          python scripts/generate-feature-audit-report.py
+          
+      - name: Upload audit results
+        uses: actions/upload-artifact@v3
+        with:
+          name: feature-audit-results
+          path: reports/feature-audit-*.json
+
+  regulatory-currency-check:
+    name: "Check Regulatory Currency"
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+          
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+          pip install beautifulsoup4 feedparser
+          
+      - name: Check for EU regulatory updates
+        run: |
+          python scripts/check-eu-updates.py
+          
+      - name: Check for US federal updates
+        run: |
+          python scripts/check-us-federal-updates.py
+          
+      - name: Check for state-level updates
+        run: |
+          python scripts/check-state-updates.py
+          
+      - name: Generate regulatory update report
+        run: |
+          python scripts/generate-regulatory-update-report.py
+          
+      - name: Create issue for regulatory updates
+        if: ${{ env.REGULATORY_UPDATES_FOUND == 'true' }}
+        uses: actions/github-script@v6
+        with:
+          script: |
+            github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: 'Regulatory Updates Detected - Review Required',
+              body: 'Automated regulatory monitoring has detected potential updates. Please review the regulatory update report.',
+              labels: ['compliance', 'regulatory-update', 'high-priority']
+            })
+
+  data-flow-audit:
+    name: "Audit Data Flows"
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+          
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+          
+      - name: Audit GDPR data flows
+        run: |
+          python src/compliance/audit-logging/audit-gdpr-flows.py
+          
+      - name: Audit COPPA data restrictions
+        run: |
+          python src/compliance/audit-logging/audit-coppa-restrictions.py
+          
+      - name: Audit cross-border data transfers
+        run: |
+          python src/compliance/audit-logging/audit-data-transfers.py
+          
+      - name: Generate data flow compliance report
+        run: |
+          python scripts/generate-data-flow-report.py
+
+  security-compliance-scan:
+    name: "Security Compliance Scan"
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        
+      - name: Run security compliance scan
+        uses: securecodewarrior/github-action-add-sarif@v1
+        with:
+          sarif-file: 'security-scan-results.sarif'
+          
+      - name: Audit encryption compliance
+        run: |
+          python scripts/audit-encryption-compliance.py
+          
+      - name: Check data retention compliance
+        run: |
+          python scripts/audit-data-retention.py
+          
+      - name: Validate audit log integrity
+        run: |
+          python scripts/validate-audit-logs.py
+
+  generate-compliance-dashboard:
+    name: "Generate Compliance Dashboard"
+    runs-on: ubuntu-latest
+    needs: [compliance-testing, feature-compliance-audit, data-flow-audit]
+    if: always()
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        
+      - name: Download all artifacts
+        uses: actions/download-artifact@v3
+        
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+          
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+          pip install plotly pandas
+          
+      - name: Generate compliance dashboard
+        run: |
+          python scripts/generate-compliance-dashboard.py
+          
+      - name: Upload compliance dashboard
+        uses: actions/upload-artifact@v3
+        with:
+          name: compliance-dashboard
+          path: reports/compliance-dashboard.html
+          
+      - name: Deploy to compliance monitoring site
+        if: github.ref == 'refs/heads/main'
+        run: |
+          # Deploy dashboard to internal compliance monitoring site
+          python scripts/deploy-compliance-dashboard.py
+
+  notify-compliance-team:
+    name: "Notify Compliance Team"
+    runs-on: ubuntu-latest
+    needs: [generate-compliance-dashboard]
+    if: failure() || (github.event_name == 'schedule')
+    
+    steps:
+      - name: Send compliance notification
+        uses: 8398a7/action-slack@v3
+        with:
+          status: ${{ job.status }}
+          channel: '#compliance-alerts'
+          webhook_url: ${{ secrets.SLACK_WEBHOOK_COMPLIANCE }}
+          fields: repo,message,commit,author,action,eventName,ref,workflow
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_COMPLIANCE }}

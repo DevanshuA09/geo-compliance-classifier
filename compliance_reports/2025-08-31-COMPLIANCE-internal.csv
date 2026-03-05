@@ -1,0 +1,2 @@
+feature_name,geo_compliance,regulations_matched,status,jurisdiction,risk_level,implementation_date,last_audit_date
+Test Feature,YES,"GDPR, DMA",Compliant,EU,LOW,,

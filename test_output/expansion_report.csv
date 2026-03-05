@@ -1,0 +1,98 @@
+feature_id,term,expansion,count
+csv_feature_0000,ASL,Age Segmentation Logic - System for identifying and categorizing users by age groups for compliance,2
+csv_feature_0000,EchoTrace,Audit logging system that tracks user actions and system decisions for compliance reporting,1
+csv_feature_0000,GH,Geo-Hash - Geographic targeting and restriction system for jurisdiction-specific features,2
+csv_feature_0000,ShadowMode,Testing mode where features are deployed but their effects are logged without impacting user experience,1
+csv_feature_0000,Utah Social Media Regulation Act,Utah legislation requiring age verification and parental controls for social media platforms,1
+csv_feature_0001,FR,Feature Registry - System for tracking and managing feature rollouts and configurations,1
+csv_feature_0001,GH,Geo-Hash - Geographic targeting and restriction system for jurisdiction-specific features,1
+csv_feature_0001,NR,Non-Reversible - Configuration setting that cannot be changed by users without administrative intervention,2
+csv_feature_0001,PF,Personalization Feed - Algorithm that customizes content recommendations based on user behavior,2
+csv_feature_0001,SB976,California Senate Bill 976 - Protecting Our Kids from Social Media Addiction Act,1
+csv_feature_0002,CDS,Compliance Detection System - Automated system for identifying potential policy violations,2
+csv_feature_0002,LCP,Legal Compliance Parameters - Configurable rules governing content restrictions,1
+csv_feature_0002,NCMEC,National Center for Missing and Exploited Children - US organization for reporting child abuse material,1
+csv_feature_0002,T5,Threat Level 5 - Highest severity classification for content requiring immediate escalation,2
+csv_feature_0002,US,United States - Geographic region identifier for feature targeting,1
+csv_feature_0003,DSA,Digital Services Act - EU regulation governing online platform transparency and content moderation,1
+csv_feature_0003,EchoTrace,Audit logging system that tracks user actions and system decisions for compliance reporting,1
+csv_feature_0003,GH,Geo-Hash - Geographic targeting and restriction system for jurisdiction-specific features,1
+csv_feature_0003,NSP,Non-Safe Platform - Content classification indicating material unsuitable for minors,2
+csv_feature_0003,Redline,Critical alert status requiring immediate legal or compliance team review,1
+csv_feature_0003,Softblock,Temporary content restriction that can be reviewed and potentially reversed,1
+csv_feature_0004,BB,Behavior Baseline - Machine learning model that establishes normal user behavior patterns,1
+csv_feature_0004,CDS,Compliance Detection System - Automated system for identifying potential policy violations,1
+csv_feature_0004,Glow,Monitoring system that tracks feature health and performance metrics during rollouts,1
+csv_feature_0004,IMT,Identity Management Tool - System for verifying and managing user identity and permissions,1
+csv_feature_0004,Jellybean,Parental control framework for managing minor user accounts and permissions,2
+csv_feature_0004,ShadowMode,Testing mode where features are deployed but their effects are logged without impacting user experience,1
+csv_feature_0005,CDS,Compliance Detection System - Automated system for identifying potential policy violations,2
+csv_feature_0005,DRT,Data Retention Tool - System managing automated data lifecycle and deletion policies,2
+csv_feature_0005,EchoTrace,Audit logging system that tracks user actions and system decisions for compliance reporting,1
+csv_feature_0005,Spanner,A/B testing framework for controlled feature rollouts and experimentation,1
+csv_feature_0006,NSP,Non-Safe Platform - Content classification indicating material unsuitable for minors,2
+csv_feature_0006,Redline,Critical alert status requiring immediate legal or compliance team review,1
+csv_feature_0006,Softblock,Temporary content restriction that can be reviewed and potentially reversed,1
+csv_feature_0007,CDS,Compliance Detection System - Automated system for identifying potential policy violations,1
+csv_feature_0007,GH,Geo-Hash - Geographic targeting and restriction system for jurisdiction-specific features,1
+csv_feature_0007,T5,Threat Level 5 - Highest severity classification for content requiring immediate escalation,2
+csv_feature_0008,ASL,Age Segmentation Logic - System for identifying and categorizing users by age groups for compliance,1
+csv_feature_0008,BB,Behavior Baseline - Machine learning model that establishes normal user behavior patterns,1
+csv_feature_0008,CDS,Compliance Detection System - Automated system for identifying potential policy violations,1
+csv_feature_0008,Snowcap,Enhanced protection system specifically designed for underage user accounts,2
+csv_feature_0009,PF,Personalization Feed - Algorithm that customizes content recommendations based on user behavior,2
+csv_feature_0010,BB,Behavior Baseline - Machine learning model that establishes normal user behavior patterns,1
+csv_feature_0010,EchoTrace,Audit logging system that tracks user actions and system decisions for compliance reporting,1
+csv_feature_0011,FR,Feature Registry - System for tracking and managing feature rollouts and configurations,1
+csv_feature_0011,IMT,Identity Management Tool - System for verifying and managing user identity and permissions,1
+csv_feature_0012,BB,Behavior Baseline - Machine learning model that establishes normal user behavior patterns,1
+csv_feature_0012,PF,Personalization Feed - Algorithm that customizes content recommendations based on user behavior,2
+csv_feature_0012,ShadowMode,Testing mode where features are deployed but their effects are logged without impacting user experience,1
+csv_feature_0013,NR,Non-Reversible - Configuration setting that cannot be changed by users without administrative intervention,2
+csv_feature_0013,Spanner,A/B testing framework for controlled feature rollouts and experimentation,1
+csv_feature_0014,CDS,Compliance Detection System - Automated system for identifying potential policy violations,2
+csv_feature_0014,DRT,Data Retention Tool - System managing automated data lifecycle and deletion policies,1
+csv_feature_0015,BB,Behavior Baseline - Machine learning model that establishes normal user behavior patterns,1
+csv_feature_0015,EEA,European Economic Area - Geographic region subject to EU digital regulations,1
+csv_feature_0015,GH,Geo-Hash - Geographic targeting and restriction system for jurisdiction-specific features,1
+csv_feature_0016,CA,Canada - Geographic region identifier for feature targeting,1
+csv_feature_0016,Glow,Monitoring system that tracks feature health and performance metrics during rollouts,1
+csv_feature_0016,PF,Personalization Feed - Algorithm that customizes content recommendations based on user behavior,2
+csv_feature_0016,Spanner,A/B testing framework for controlled feature rollouts and experimentation,1
+csv_feature_0017,BR,Brazil - Geographic region identifier for feature targeting,1
+csv_feature_0017,CA,Canada - Geographic region identifier for feature targeting,1
+csv_feature_0017,GH,Geo-Hash - Geographic targeting and restriction system for jurisdiction-specific features,1
+csv_feature_0017,ID,Indonesia - Geographic region identifier for feature targeting,1
+csv_feature_0017,ShadowMode,Testing mode where features are deployed but their effects are logged without impacting user experience,1
+csv_feature_0017,US,United States - Geographic region identifier for feature targeting,1
+csv_feature_0018,GH,Geo-Hash - Geographic targeting and restriction system for jurisdiction-specific features,1
+csv_feature_0018,Spanner,A/B testing framework for controlled feature rollouts and experimentation,1
+csv_feature_0018,US,United States - Geographic region identifier for feature targeting,1
+csv_feature_0019,FR,Feature Registry - System for tracking and managing feature rollouts and configurations,1
+csv_feature_0019,GH,Geo-Hash - Geographic targeting and restriction system for jurisdiction-specific features,1
+csv_feature_0020,ASL,Age Segmentation Logic - System for identifying and categorizing users by age groups for compliance,2
+csv_feature_0020,CDS,Compliance Detection System - Automated system for identifying potential policy violations,1
+csv_feature_0020,EchoTrace,Audit logging system that tracks user actions and system decisions for compliance reporting,1
+csv_feature_0020,US,United States - Geographic region identifier for feature targeting,1
+csv_feature_0021,LCP,Legal Compliance Parameters - Configurable rules governing content restrictions,2
+csv_feature_0021,ShadowMode,Testing mode where features are deployed but their effects are logged without impacting user experience,1
+csv_feature_0022,BB,Behavior Baseline - Machine learning model that establishes normal user behavior patterns,1
+csv_feature_0022,IMT,Identity Management Tool - System for verifying and managing user identity and permissions,1
+csv_feature_0023,CDS,Compliance Detection System - Automated system for identifying potential policy violations,1
+csv_feature_0023,EchoTrace,Audit logging system that tracks user actions and system decisions for compliance reporting,1
+csv_feature_0023,Redline,Critical alert status requiring immediate legal or compliance team review,1
+csv_feature_0024,BB,Behavior Baseline - Machine learning model that establishes normal user behavior patterns,1
+csv_feature_0024,Spanner,A/B testing framework for controlled feature rollouts and experimentation,1
+csv_feature_0025,ASL,Age Segmentation Logic - System for identifying and categorizing users by age groups for compliance,1
+csv_feature_0025,BB,Behavior Baseline - Machine learning model that establishes normal user behavior patterns,1
+csv_feature_0025,Jellybean,Parental control framework for managing minor user accounts and permissions,2
+csv_feature_0026,ASL,Age Segmentation Logic - System for identifying and categorizing users by age groups for compliance,1
+csv_feature_0026,CDS,Compliance Detection System - Automated system for identifying potential policy violations,1
+csv_feature_0026,EchoTrace,Audit logging system that tracks user actions and system decisions for compliance reporting,1
+csv_feature_0026,PF,Personalization Feed - Algorithm that customizes content recommendations based on user behavior,1
+csv_feature_0027,ASL,Age Segmentation Logic - System for identifying and categorizing users by age groups for compliance,1
+csv_feature_0027,Softblock,Temporary content restriction that can be reviewed and potentially reversed,1
+csv_feature_0028,Snowcap,Enhanced protection system specifically designed for underage user accounts,1
+csv_feature_0029,ASL,Age Segmentation Logic - System for identifying and categorizing users by age groups for compliance,1
+csv_feature_0029,GH,Geo-Hash - Geographic targeting and restriction system for jurisdiction-specific features,1
+csv_feature_0029,T5,Threat Level 5 - Highest severity classification for content requiring immediate escalation,1

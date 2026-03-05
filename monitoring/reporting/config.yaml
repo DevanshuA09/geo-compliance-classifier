@@ -1,0 +1,88 @@
+# Compliance Reporter Configuration
+output_dir: "./compliance_reports"
+templates_dir: "./templates"
+dashboard_port: 8050
+
+# Supported report formats
+report_formats:
+  - html
+  - csv
+  - pdf
+  - json
+  - yaml
+
+# Audience-specific configurations
+audience_configs:
+  Internal:
+    detail_level: "high"
+    include_metrics: true
+    include_recommendations: true
+    include_audit_trail: true
+    include_risk_analysis: true
+    
+  Regulator:
+    detail_level: "medium"
+    include_metrics: true
+    include_recommendations: false
+    include_audit_trail: false
+    include_risk_analysis: true
+    
+  Executive:
+    detail_level: "low"
+    include_metrics: true
+    include_recommendations: true
+    include_audit_trail: false
+    include_risk_analysis: false
+    
+  External_Partner:
+    detail_level: "medium"
+    include_metrics: true
+    include_recommendations: false
+    include_audit_trail: false
+    include_risk_analysis: false
+
+# Dashboard configuration
+dashboard:
+  auto_open: false
+  theme: "plotly_white"
+  height: 800
+  width: 1200
+
+# Deadline tracking configuration
+deadline_tracking:
+  urgent_threshold_days: 7
+  critical_threshold_days: 3
+  reminder_frequency: "daily"
+  alert_channels:
+    - email
+    - slack
+    - dashboard
+
+# Risk analysis configuration
+risk_analysis:
+  high_risk_threshold: 0.7
+  critical_risk_threshold: 0.9
+  compliance_rate_threshold: 0.8
+  include_jurisdiction_analysis: true
+  include_regulation_analysis: true
+
+# Audit trail configuration
+audit_trail:
+  retention_days: 365
+  include_feature_changes: true
+  include_status_changes: true
+  include_deadline_changes: true
+
+# Scheduling configuration
+scheduling:
+  default_frequency: "weekly"
+  supported_frequencies:
+    - daily
+    - weekly
+    - monthly
+    - quarterly
+    - annually
+  timezone: "UTC"
+  business_hours:
+    start: "09:00"
+    end: "17:00" 

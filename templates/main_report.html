@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Compliance Report - {{ report_id }}</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; }
+        .header { background: #f5f5f5; padding: 20px; border-radius: 5px; }
+        .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin: 20px 0; }
+        .stat-card { background: white; padding: 20px; border-radius: 5px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        .feature-table { width: 100%; border-collapse: collapse; margin: 20px 0; }
+        .feature-table th, .feature-table td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+        .feature-table th { background-color: #f2f2f2; }
+        .compliant { background-color: #d4edda; }
+        .non-compliant { background-color: #f8d7da; }
+        .flagged { background-color: #fff3cd; }
+        .deadlines { margin: 20px 0; }
+        .deadline-item { padding: 10px; margin: 5px 0; border-left: 4px solid #007bff; background: #f8f9fa; }
+        .overdue { border-left-color: #dc3545; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Compliance Report</h1>
+        <p><strong>Report ID:</strong> {{ report_id }}</p>
+        <p><strong>Generated:</strong> {{ generated_date }}</p>
+        <p><strong>Audience:</strong> {{ audience }}</p>
+    </div>
+    
+    <h2>Summary Statistics</h2>
+    <div class="stats-grid">
+        <div class="stat-card">
+            <h3>Total Features</h3>
+            <p>{{ summary_stats.total_features }}</p>
+        </div>
+        <div class="stat-card">
+            <h3>Geo Compliant</h3>
+            <p>{{ summary_stats.geo_compliant }}</p>
+        </div>
+        <div class="stat-card">
+            <h3>Flagged for Review</h3>
+            <p>{{ summary_stats.flagged_for_review }}</p>
+        </div>
+        <div class="stat-card">
+            <h3>Non Compliant</h3>
+            <p>{{ summary_stats.non_compliant }}</p>
+        </div>
+    </div>
+    
+    <h2>Feature Compliance Matrix</h2>
+    <table class="feature-table">
+        <thead>
+            <tr>
+                <th>Feature Name</th>
+                <th>Geo Compliance</th>
+                <th>Regulations Matched</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for feature in feature_matrix %}
+            <tr class="{{ 'compliant' if feature.status == 'Compliant' else 'non-compliant' if feature.status == 'Non_Compliant' else 'flagged' }}">
+                <td>{{ feature.feature_name }}</td>
+                <td>{{ feature.geo_compliance }}</td>
+                <td>{{ feature.regulations_matched | join(', ') }}</td>
+                <td>{{ feature.status }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    
+    {% if submission_deadlines %}
+    <h2>Submission Deadlines</h2>
+    <div class="deadlines">
+        {% for deadline in submission_deadlines %}
+        <div class="deadline-item {{ 'overdue' if deadline.status == 'OVERDUE' }}">
+            <strong>{{ deadline.regulation }}</strong> - {{ deadline.next_due }}
+            <br><small>Status: {{ deadline.status }}</small>
+        </div>
+        {% endfor %}
+    </div>
+    {% endif %}
+    
+    {% if recommendations %}
+    <h2>Recommendations</h2>
+    <ul>
+        {% for rec in recommendations %}
+        <li>{{ rec }}</li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+</body>
+</html>
+        

@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "geo-compliance": {
+      "command": "node",
+      "args": ["/Users/shresthkansal/Desktop/Acads/Y2S1/CCAs/Competitions/TikTok TechJam/new folder/geo-compliance-classifier/mcp-server/index.js"],
+      "env": {
+        "PYTHON_ENV": "/Users/shresthkansal/LegittAI/legittpro-fastapi/myenv/bin/python",
+        "PROJECT_ROOT": "/Users/shresthkansal/Desktop/Acads/Y2S1/CCAs/Competitions/TikTok TechJam/new folder/geo-compliance-classifier"
+      }
+    }
+  }
+}

@@ -1,0 +1,74 @@
+# Centralized RAG System Configuration
+# This file configures the unified RAG system used by all agents
+
+# RAG Service Configuration
+rag_service:
+  host: "0.0.0.0"
+  port: 8000
+  base_url: "http://localhost:8000"
+  timeout: 30
+  max_retries: 3
+  
+# Vector Index Configuration
+vector_index:
+  embedding_model: "sentence-transformers/all-MiniLM-L6-v2"
+  chunk_size: 512
+  chunk_overlap: 50
+  max_chunks_per_document: 100
+
+# RAG Configuration
+rag:
+  vectorstore:
+    type: "faiss"
+    index_path: "index/faiss/index.faiss"
+    id_map_path: "index/faiss/id_map.jsonl"
+    metric: "ip"
+    normalize: true
+  retriever:
+    top_k: 5
+  
+# Retrieval Configuration
+retrieval:
+  top_k: 5
+  max_chars: 1200
+  bm25_weight: 0.3
+  dense_weight: 0.7
+  include_citation: true
+  
+# Performance Configuration
+performance:
+  cache_size: 500
+  max_latency_ms: 5000
+  enable_monitoring: true
+  
+# Agent Configuration
+agents:
+  evidence_verification:
+    confidence_threshold: 0.75
+    auto_approval_threshold: 0.85
+    
+  confidence_validator:
+    confidence_threshold: 0.85
+    auto_approval_threshold: 0.85
+    
+  active_learning:
+    pattern_analysis_threshold: 2
+    retraining_threshold: 50
+    
+# Fallback Configuration
+fallback:
+  enable_local_database: true
+  local_database_path: "legal_texts"
+  enable_offline_mode: true
+  
+# Logging Configuration
+logging:
+  level: "INFO"
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  file: "logs/centralized_rag.log"
+  
+# Health Check Configuration
+health_check:
+  interval_seconds: 30
+  timeout_seconds: 10
+  max_failures: 3

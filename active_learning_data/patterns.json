@@ -1,0 +1,273 @@
+[
+  {
+    "pattern_id": "sample_pattern_001",
+    "text_pattern": "Compliant->Non-Compliant",
+    "original_prediction": "Compliant",
+    "corrected_prediction": "Non-Compliant",
+    "confidence_delta": 0.4,
+    "frequency": 5,
+    "examples": [
+      "Social media platform without age verification",
+      "Data collection without consent mechanisms",
+      "Missing safety protocols for hazardous materials"
+    ],
+    "regulatory_context": "Age verification requirements for users under 18, GDPR consent mechanisms, workplace safety regulations",
+    "geographic_factors": [
+      "Utah",
+      "California",
+      "EU"
+    ],
+    "demographic_factors": [
+      "minors",
+      "data subjects",
+      "workers"
+    ]
+  },
+  {
+    "pattern_id": "sample_pattern_002",
+    "text_pattern": "Non-Compliant->Compliant",
+    "original_prediction": "Non-Compliant",
+    "corrected_prediction": "Compliant",
+    "confidence_delta": 0.3,
+    "frequency": 3,
+    "examples": [
+      "Feature with proper consent mechanisms",
+      "System with adequate safety protocols",
+      "Platform with age verification"
+    ],
+    "regulatory_context": "Proper implementation of consent mechanisms, safety standards compliance, age verification protocols",
+    "geographic_factors": [
+      "California",
+      "Texas",
+      "EU"
+    ],
+    "demographic_factors": [
+      "adults",
+      "verified users",
+      "trained workers"
+    ]
+  },
+  {
+    "pattern_id": "sample_pattern_003",
+    "text_pattern": "Unclear->Compliant",
+    "original_prediction": "Unclear",
+    "corrected_prediction": "Compliant",
+    "confidence_delta": 0.2,
+    "frequency": 2,
+    "examples": [
+      "Feature with ambiguous compliance status",
+      "System requiring clarification"
+    ],
+    "regulatory_context": "Clear compliance after detailed analysis, proper documentation review",
+    "geographic_factors": [
+      "General"
+    ],
+    "demographic_factors": [
+      "general users"
+    ]
+  },
+  {
+    "pattern_id": "7fc60059",
+    "text_pattern": "Compliant->Unknown",
+    "original_prediction": "Compliant",
+    "corrected_prediction": "Unknown",
+    "confidence_delta": 0.0,
+    "frequency": 3,
+    "examples": [
+      "",
+      "",
+      ""
+    ],
+    "regulatory_context": "RAG analysis failed: Failed to retrieve results: HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: /retrieve (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x300e3b020>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "geographic_factors": [],
+    "demographic_factors": []
+  },
+  {
+    "pattern_id": "ce0ef0b4",
+    "text_pattern": "Compliant->Unknown",
+    "original_prediction": "Compliant",
+    "corrected_prediction": "Unknown",
+    "confidence_delta": 0.0,
+    "frequency": 3,
+    "examples": [
+      "",
+      "",
+      ""
+    ],
+    "regulatory_context": "RAG analysis failed: Failed to retrieve results: HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: /retrieve (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x300e39ae0>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "geographic_factors": [],
+    "demographic_factors": []
+  },
+  {
+    "pattern_id": "f769a14a",
+    "text_pattern": "Compliant->Unknown",
+    "original_prediction": "Compliant",
+    "corrected_prediction": "Unknown",
+    "confidence_delta": 0.0,
+    "frequency": 3,
+    "examples": [
+      "",
+      "",
+      ""
+    ],
+    "regulatory_context": "RAG analysis failed: Failed to retrieve results: HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: /retrieve (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x16a931480>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "geographic_factors": [],
+    "demographic_factors": []
+  },
+  {
+    "pattern_id": "3ff460f1",
+    "text_pattern": "Compliant->Non-Compliant",
+    "original_prediction": "Compliant",
+    "corrected_prediction": "Non-Compliant",
+    "confidence_delta": 0.4,
+    "frequency": 2,
+    "examples": [
+      "Sample compliance text",
+      "Sample compliance text"
+    ],
+    "regulatory_context": "RAG analysis failed: Failed to retrieve results: HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: /retrieve (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x16a9319d0>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "geographic_factors": [],
+    "demographic_factors": []
+  },
+  {
+    "pattern_id": "556f3c87",
+    "text_pattern": "Compliant->Unknown",
+    "original_prediction": "Compliant",
+    "corrected_prediction": "Unknown",
+    "confidence_delta": 0.0,
+    "frequency": 3,
+    "examples": [
+      "",
+      "",
+      ""
+    ],
+    "regulatory_context": "RAG analysis failed: Failed to retrieve results: HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: /retrieve (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x16a933130>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "geographic_factors": [],
+    "demographic_factors": []
+  },
+  {
+    "pattern_id": "06fdd9a4",
+    "text_pattern": "Compliant->Non-Compliant",
+    "original_prediction": "Compliant",
+    "corrected_prediction": "Non-Compliant",
+    "confidence_delta": 0.4,
+    "frequency": 2,
+    "examples": [
+      "Sample compliance text",
+      "Sample compliance text"
+    ],
+    "regulatory_context": "RAG analysis failed: Failed to retrieve results: HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: /retrieve (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x16a933680>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "geographic_factors": [],
+    "demographic_factors": []
+  },
+  {
+    "pattern_id": "66606879",
+    "text_pattern": "Unclear->Compliant",
+    "original_prediction": "Unclear",
+    "corrected_prediction": "Compliant",
+    "confidence_delta": 0.4,
+    "frequency": 2,
+    "examples": [
+      "The organization maintains compliance with all applicable regulations and conducts regular audits.",
+      "The organization maintains compliance with all applicable regulations and conducts regular audits."
+    ],
+    "regulatory_context": "RAG analysis failed: Failed to retrieve results: HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: /retrieve (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x16a933ac0>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "geographic_factors": [],
+    "demographic_factors": []
+  },
+  {
+    "pattern_id": "e43858a6",
+    "text_pattern": "Compliant->Unknown",
+    "original_prediction": "Compliant",
+    "corrected_prediction": "Unknown",
+    "confidence_delta": 0.0,
+    "frequency": 3,
+    "examples": [
+      "",
+      "",
+      ""
+    ],
+    "regulatory_context": "RAG analysis failed: Failed to retrieve results: HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: /retrieve (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x17c905e10>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "geographic_factors": [],
+    "demographic_factors": []
+  },
+  {
+    "pattern_id": "e9852e1d",
+    "text_pattern": "Compliant->Non-Compliant",
+    "original_prediction": "Compliant",
+    "corrected_prediction": "Non-Compliant",
+    "confidence_delta": 0.4,
+    "frequency": 3,
+    "examples": [
+      "Sample compliance text",
+      "Sample compliance text",
+      "Sample compliance text"
+    ],
+    "regulatory_context": "RAG analysis failed: Failed to retrieve results: HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: /retrieve (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x17c905ae0>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "geographic_factors": [],
+    "demographic_factors": []
+  },
+  {
+    "pattern_id": "5720547f",
+    "text_pattern": "Unclear->Compliant",
+    "original_prediction": "Unclear",
+    "corrected_prediction": "Compliant",
+    "confidence_delta": 0.4,
+    "frequency": 2,
+    "examples": [
+      "The organization maintains compliance with all applicable regulations and conducts regular audits.",
+      "The organization maintains compliance with all applicable regulations and conducts regular audits."
+    ],
+    "regulatory_context": "RAG analysis failed: Failed to retrieve results: HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: /retrieve (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x17c907680>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "geographic_factors": [],
+    "demographic_factors": []
+  },
+  {
+    "pattern_id": "f515cd89",
+    "text_pattern": "Compliant->Unknown",
+    "original_prediction": "Compliant",
+    "corrected_prediction": "Unknown",
+    "confidence_delta": 0.0,
+    "frequency": 3,
+    "examples": [
+      "",
+      "",
+      ""
+    ],
+    "regulatory_context": "RAG analysis failed: Failed to retrieve results: HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: /retrieve (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x17c905d00>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "geographic_factors": [],
+    "demographic_factors": []
+  },
+  {
+    "pattern_id": "7a8386f9",
+    "text_pattern": "Compliant->Non-Compliant",
+    "original_prediction": "Compliant",
+    "corrected_prediction": "Non-Compliant",
+    "confidence_delta": 0.4,
+    "frequency": 3,
+    "examples": [
+      "Sample compliance text",
+      "Sample compliance text",
+      "Sample compliance text"
+    ],
+    "regulatory_context": "RAG analysis failed: Failed to retrieve results: HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: /retrieve (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x17c905590>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "geographic_factors": [],
+    "demographic_factors": []
+  },
+  {
+    "pattern_id": "f42ea584",
+    "text_pattern": "Unclear->Compliant",
+    "original_prediction": "Unclear",
+    "corrected_prediction": "Compliant",
+    "confidence_delta": 0.4,
+    "frequency": 3,
+    "examples": [
+      "The organization maintains compliance with all applicable regulations and conducts regular audits.",
+      "The organization maintains compliance with all applicable regulations and conducts regular audits.",
+      "The organization maintains compliance with all applicable regulations and conducts regular audits."
+    ],
+    "regulatory_context": "RAG analysis failed: Failed to retrieve results: HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: /retrieve (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x17c906030>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "geographic_factors": [],
+    "demographic_factors": []
+  }
+]

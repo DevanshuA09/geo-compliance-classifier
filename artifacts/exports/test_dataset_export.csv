@@ -1,0 +1,2 @@
+request_id,timestamp_iso,agent_name,feature_id,feature_title,dataset_tag,decision_flag,reasoning_text,related_regulations,confidence,llm_model_name,prompt_template_id,embedder_name,embed_dim,vectorstore_type,metric,normalize,top_k,retrieved_ids,scores,total_ms,embed_ms,search_ms,llm_ms,error_type,error_message_redacted
+test-123,2025-08-30T22:22:58.236325,test,,,,True,Test,,0.0,,,,,,,,,,,0,0,0,0,,
